@@ -1,5 +1,9 @@
 # AI Assistant Prompts
 
+These prompts are starting points, not a replacement for the workflow instructions. The [Daily Workflow — AI Instructions](../000%20Workflows/000%20Daily%20Workflow.md) and the user's current request determine what the AI may change.
+
+Unless a prompt explicitly asks for a vault update, treat the result as analysis or a draft for review. Use only facts available in the vault or supplied by the user. Label assumptions, proposals, and missing context instead of filling them in. Do not send messages, publish content, commit changes, or perform external actions unless the user explicitly asks.
+
 ## Daily Workflow Prompts
 
 The complete execution rules are in [Daily Workflow — AI Instructions](../000%20Workflows/000%20Daily%20Workflow.md). The human-facing explanation is in the [Daily Rolling Guide](./Daily%20Rolling%20Guide.md).
@@ -18,13 +22,13 @@ Review the most recent previous daily note and available planning context. Sugge
 
 ### End-of-Day Cleanup
 ```
-Close out today's daily note using the AI Daily Workflow. Review completed work and every open item, then propose or record the correct disposition for each item and leave a useful starting point for tomorrow.
+Close out today's daily note using the AI Daily Workflow. Review completed work and every open item, propose a disposition for each item, and leave a useful starting point for tomorrow. Show me the proposed changes first unless I explicitly ask you to update the note.
 ```
 **Result**: Records outcomes, identifies unresolved work, and prepares deliberate carry-forwards
 
 ### Planning and Prioritization
 ```
-Help me plan my day. Review my priorities and suggest optimal sequencing based on my energy patterns and calendar.
+Help me plan my day. Review my known commitments, priorities, available time, and any relevant context. Suggest a realistic sequence and explain the tradeoffs; do not decide my priorities for me or change my notes.
 ```
 **Result**: Analyzes tasks and suggests optimal ordering based on difficulty and energy levels
 
@@ -38,19 +42,19 @@ Analyze my incomplete tasks and help me understand what's causing the persistenc
 
 ### Meeting Summarization
 ```
-Could you summarize our [meeting type] from today's notes in a manner suitable for sharing with the wider [audience] team?
+Could you draft a summary of our [meeting type] from today's notes in a manner suitable for sharing with the wider [audience] team? Use only the available notes, identify unresolved items, and do not send or publish it.
 ```
 **Result**: Professional summary with executive overview, key points, and action items
 
 ### Email/Message Drafting
 ```
-Based on today's meeting notes about [topic], help me draft a [type of communication] for [audience] focusing on [key points].
+Based on today's meeting notes about [topic], help me draft a [type of communication] for [audience] focusing on [key points]. Use only supported facts, mark anything needing confirmation, and do not send it.
 ```
 **Result**: Professional communication draft with key information
 
 ### Stakeholder Updates
 ```
-Create a brief stakeholder update for [project/initiative] based on this week's progress notes.
+Draft a brief stakeholder update for [project/initiative] based on this week's progress notes. Separate completed work, current status, risks, and next steps. Use only supported facts and do not send or publish it.
 ```
 **Result**: Concise status update highlighting progress, challenges, and next steps
 
@@ -58,7 +62,7 @@ Create a brief stakeholder update for [project/initiative] based on this week's 
 
 ### Weekly Review
 ```
-Please analyze this week's daily notes and create a weekly summary focusing on:
+Please analyze this week's daily notes and draft a weekly summary focusing on:
 - Key accomplishments and strategic progress
 - Patterns in productivity and energy
 - Persistent tasks that need escalation
@@ -68,7 +72,7 @@ Please analyze this week's daily notes and create a weekly summary focusing on:
 
 ### Pattern Analysis
 ```
-Analyze my [time period] notes for patterns in [specific area: productivity, energy, decision-making, etc.].
+Analyze my [time period] notes for patterns in [specific area: productivity, energy, decision-making, etc.]. Distinguish observed evidence from interpretation, and do not invent metrics from missing notes.
 ```
 **Result**: Data-driven insights about trends and optimization opportunities
 
@@ -197,7 +201,7 @@ Based on my recent activities and challenges, what skills or knowledge areas sho
 
 ### Task Status Updates
 ```
-Mark [task/project] as complete and process any follow-up actions.
+Review [task/project] and propose whether it is complete, should carry forward, move to a project, be delegated, scheduled, dropped, or needs a decision. Do not update the note unless I explicitly authorize that change.
 ```
 
 ### Context Switching

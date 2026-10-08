@@ -4,7 +4,7 @@
 
 - **Variation:** Generic starter baseline
 - **Branch:** `main`
-- **Base:** Mark Bakke's AI-native Obsidian workflow, adapted for a portable vault
+- **Base:** An AI-native workflow created by Mark Bakke, adapted for a portable vault
 - **Audience:** Anyone who wants a small daily-note and review system
 
 ## Purpose
@@ -25,4 +25,6 @@ Create a variation branch from `main` when a use case needs additional folders o
 
 ## Provenance
 
-The initial seed came from commit `434cf7b` in Mark Bakke's `mbakke-ai-notes-workflow` repository, the same snapshot originally imported into Dieter's vault. This file records adaptation choices; it is not a claim that the resulting vault is an unmodified copy.
+The initial seed was a source snapshot provided by Mark Bakke. This file records
+adaptation choices; it is not a claim that the resulting vault is an unmodified
+copy.

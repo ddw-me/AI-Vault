@@ -8,7 +8,7 @@ This is the only onboarding guide for the vault. Start small: daily notes are en
 2. If you received an archive, extract it first. In Obsidian, choose **Open folder as vault** and select the folder containing `README.md`. Do not open one of its subdirectories as the vault.
 3. Read [AGENTS.md](../AGENTS.md) for the portable rules.
 
-The vault may live in Dropbox or another synchronized folder for access from multiple computers. Set it up and test it on one computer first. Mobile syncing has platform-specific limitations; consult Obsidian's [sync guide](https://obsidian.md/help/sync-notes) or use Obsidian Sync before relying on Dropbox for mobile access. Synchronization and Git provide different things: synchronization provides access, while Git provides history and recovery. If you do not use Git, make periodic copies or archives of the entire vault and test that a copy can be opened before relying on it as a backup.
+The vault may live in Dropbox or another synchronized folder for access from multiple computers. Set it up and test it on one computer first. Mobile syncing has platform-specific limitations; consult Obsidian's [sync guide](https://obsidian.md/help/sync-notes) or use Obsidian Sync before relying on Dropbox for mobile access. Synchronization and Git provide different things: synchronization provides access, while Git provides history and recovery. Read the [Recovery Guide](./Recovery%20Guide.md) before relying on either system as a backup. If you do not use Git, make periodic copies or archives of the entire vault and test that a copy can be opened before relying on it as a backup.
 
 ## Optional: add personal context
 
@@ -34,7 +34,7 @@ Create today's daily note using the configured template. Then:
 4. Capture requests, decisions, ideas, and observations in today's note.
 5. At the end of the day, decide what is complete, what carries forward, and what no longer matters.
 
-For a project or review note, use **Templates → Insert template** and choose the appropriate template. This is separate from creating a daily note.
+For a project or review note, use **Templates → Insert template** and choose the appropriate template. This is separate from creating a daily note. The [Project Workflow](../000%20Workflows/Project%20Workflow.md) explains when to create a project and how to close or archive it.
 
 Read the human-facing [Daily Rolling Guide](./Daily%20Rolling%20Guide.md) for the morning, daytime, and end-of-day cycle. AI tools should follow the [AI Daily Workflow](../000%20Workflows/000%20Daily%20Workflow.md) when rolling or updating notes.
 
@@ -53,13 +53,14 @@ The optional plugins included with this vault are described in [Obsidian Setup](
 | `000 Workflows/` | How the recurring processes work |
 | `100 Agents/` | Optional AI role descriptions |
 
-For the reasoning behind the cycle and the Daily Frog, read [Time Management and Using This Vault](./Time%20Management%20and%20Using%20This%20Vault.md).
+For the reasoning behind the cycle and the Daily Frog, read [Time Management and Using This Vault](./Time%20Management%20and%20Using%20This%20Vault.md). For optional AI perspectives, see [Agent Overview](../100%20Agents/Agent%20Overview.md).
 
 ## 5. Add structure gradually
 
 During the first week, focus on capturing and reviewing. After that, add only the structure that solves a real problem:
 
 - create an active project when work spans multiple days or has several steps;
+- use the [Project Workflow](../000%20Workflows/Project%20Workflow.md) to keep its status and completion condition clear;
 - use the [Weekly Review](../000%20Workflows/Weekly%20Review.md) to see what is drifting and plan the next week;
 - use the [Monthly Review](../000%20Workflows/Monthly%20Review.md) to look at longer arcs and adjust the system;
 - use Git for checkpoints when the notes are valuable enough to preserve.
@@ -71,6 +72,8 @@ AI is optional. It can help analyze notes, suggest smaller next actions, or prep
 - “Review the most recent previous daily note and suggest possible carry-forwards. Do not create today's note yet.”
 - “Help me choose a Daily Frog from today's open items.”
 - “Summarize this week's notes and identify work that needs a deliberate next step.”
+
+For a fuller daily note with calls, code, design, sharing, reflection, and context preparation sections, use the [Daily Notes Extended Template](../Templates/Daily%20Notes%20Extended%20Template.md). Start with the standard template unless the additional structure is useful.
 
 ## If the system feels heavy
 

@@ -42,7 +42,7 @@ For each new request, use **Delegate, Record, or Do**:
 - **Record:** write down the next action and context when it is not urgent or cannot be done immediately.
 - **Do:** handle it now when it is urgent, small enough, and worth interrupting the current plan.
 
-If something becomes a multi-day effort, create or update a project note and leave a pointer in today's note. Do not let important context exist only in a conversation or in memory.
+If something becomes a multi-day effort, create or update a project note and leave a pointer in today's note. Follow the [Project Workflow](../000%20Workflows/Project%20Workflow.md) for the status, next action, completion condition, and archive decision. Do not let important context exist only in a conversation or in memory.
 
 ## End of day
 

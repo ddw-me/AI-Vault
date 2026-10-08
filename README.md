@@ -21,6 +21,10 @@ The repository includes optional Obsidian community plugins, but they are disabl
 
 The vault can live in Dropbox or another synchronized folder for access from multiple computers after the setup is tested on one computer. Mobile syncing has platform-specific limitations; see the sync guidance in [Quick Start](Cheat%20Sheets/Quick%20Start.md). Git commits are still best made from a computer where Git is configured.
 
+## License
+
+Unless otherwise noted, the original Markdown notes, templates, workflow documentation, and accompanying media are licensed under [CC BY-SA 4.0 International](LICENSE.md). Material adapted from Mark Bakke is attributed in [PROVENANCE](Reference/PROVENANCE.md). Third-party plugins, themes, trademarks, and other separately identified material remain under their respective licenses.
+
 ## Branches and variations
 
 - `main` is the generic starter vault.
