@@ -1,6 +1,10 @@
-# Shareable AI Notes Workflow
+# Durable Context
 
-This repository is a small, generic Obsidian vault for daily notes, lightweight project organization, regular review, and AI-assisted reflection.
+> An AI-assisted Obsidian workflow for daily notes, projects, and reviews.
+
+![Durable Context workflow](media/durable-context.png)
+
+This repository is a small, generic, shareable Obsidian vault for daily notes, lightweight project organization, regular review, and AI-assisted reflection.
 
 It started from Mark Bakke's AI-native Obsidian workflow. The source material was adapted into a portable baseline rather than copied as a personal or company-specific system.
 
@@ -20,8 +24,8 @@ The vault can live in Dropbox or another synchronized folder for access from mul
 ## Branches and variations
 
 - `main` is the generic starter vault.
-- A `shea` branch can add folders and guidance for Shea without changing the baseline.
-- Future `engineering` or `advanced` branches can be created from `main` when needed.
+- A variation branch can add folders and guidance for a specific use case without changing the baseline.
+- Future specialized branches can be created from `main` when needed.
 
 Each branch is intended to be a complete vault. Open the branch's working tree directly in Obsidian and archive it with Git when you want to share or distribute it. See [VARIATION](Reference/VARIATION.md) for the branch metadata convention.
 
