@@ -1,111 +1,47 @@
 # Monthly Review Workflow
 
-## Purpose
-The monthly review provides strategic perspective on your productivity patterns, goal achievement, and system effectiveness. It's your opportunity to make significant workflow optimizations and strategic adjustments.
+The monthly review looks for longer arcs without pretending that a small vault has precise measurements. Use it to decide what to continue, change, or stop.
 
-## When to Conduct
-**Last weekend of the month** - schedule 1-2 hours for deep reflection and planning.
+## Review contract
 
-## AI-Assisted Monthly Review
+- **Review period:** The calendar month requested by the user, or the most recently completed calendar month.
+- **Sources:** Daily notes and weekly summaries in the period, plus active projects and goals. A monthly plan may inform the review when one exists.
+- **Missing context:** If there is no monthly plan, continue with the available weekly, project, goal, and daily notes. Do not invent objectives or treat a missing plan as a workflow failure.
+- **Output:** Create or update a note from [Monthly Summary Template](../Templates/Monthly%20Summary%20Template.md) in `Summaries/`.
+- **Evidence:** State which source notes were reviewed and identify gaps. Do not calculate completion rates, correlations, or other metrics unless the source supports them.
+- **Existing output:** Preserve the user's reflections and decisions. Do not replace an existing summary with an AI-generated report.
+- **Authority:** AI may summarize and recommend. The user chooses next-month themes, goals, and system changes.
 
-### Step 1: Comprehensive Analysis
-Ask your AI assistant:
-```
-Based on the past month's daily notes and weekly summaries, help me:
-- Identify the major themes and strategic progress
-- Analyze my decision-making quality and outcomes
-- Assess goal achievement and adjust upcoming targets
-- Recognize patterns in what gives me energy vs. drains it
-- Plan next month's focus areas and success metrics
-- Recommend workflow optimizations based on observed friction points
-```
+## Manual review
 
-### Step 2: Use the Template
-1. Create a new note using the [Monthly Summary Template](../Templates/Monthly%20Summary%20Template.md)
-2. Use the AI analysis to inform each section
-3. Add deeper strategic thinking and planning
+1. Review the weekly summaries and important daily notes for the month.
+2. Review active projects and goals for meaningful movement or drift.
+3. Identify accomplishments, unresolved commitments, repeated friction, and useful learning.
+4. Choose one or two themes or priorities for the next month.
+5. Record concrete changes in the relevant project, goal, or workflow note.
 
-### Step 3: Multi-Agent Strategic Analysis
-Get comprehensive insights across all agent specialties:
+## AI-assisted review
 
-**Historian Deep Dive:**
-```
-Historian: Analyze my productivity patterns over the last month. What factors predict my highest quality work? What environmental or scheduling changes would optimize performance?
-```
+Ask an AI assistant to analyze the period using the contract above. A useful request is:
 
-**Curator Knowledge Review:**
-```
-Curator: How effectively am I capturing, organizing, and retrieving knowledge? What information architecture improvements would enhance my workflow?
-```
+> Review the notes for [month]. State which notes and summaries you reviewed and identify missing context. Summarize major progress, open commitments, recurring friction, decisions, and learning. Do not invent goals or metrics. Recommend one or two possible themes for next month, clearly labeled as recommendations. Do not create or overwrite a summary until I approve it.
 
-**Scheduler Strategic Planning:**
-```
-Scheduler: Based on monthly patterns, how should I structure my time and energy allocation? What calendar and workflow optimizations would create the biggest impact?
-```
+Optional perspectives can be requested separately:
 
-**Operations System Health:**
-```
-Operations: Conduct a comprehensive workflow audit. What systematic improvements would eliminate the most friction and increase overall effectiveness?
-```
+- **Historian:** Which longer-term patterns are actually supported?
+- **Curator:** Which knowledge or project notes need attention?
+- **Scheduler:** What commitments and constraints should shape next month?
+- **Operations:** What repeated friction justifies a small system change?
 
-**CFO Business Impact (if applicable):**
-```
-CFO: What activities had the highest ROI this month? How should I reallocate time and attention to maximize strategic value creation?
-```
+These perspectives are optional and should remain proportionate to the amount of evidence available.
 
-## Key Review Areas
+## Output checklist
 
-### Strategic Progress
-- How well did you advance toward quarterly/annual goals?
-- What major projects or initiatives moved forward?
-- Which strategic relationships were strengthened?
+A useful monthly review answers:
 
-### System Effectiveness
-- How well is your productivity system serving you?
-- What workflows created the most value?
-- Where did you experience repeated friction?
+- What mattered this month?
+- What moved forward or stalled?
+- What should continue, change, or stop?
+- What is the most useful focus for next month?
 
-### Learning and Growth
-- What new capabilities did you develop?
-- Which decisions led to the best outcomes?
-- What would you do differently with current knowledge?
-
-### Energy and Sustainability
-- How sustainable were your work patterns?
-- What activities energized vs. depleted you?
-- How can you optimize for long-term effectiveness?
-
-## Planning Next Month
-
-### Theme Selection
-Choose 1-2 focus themes that will guide your priorities:
-- Examples: "Systematic Optimization", "Strategic Relationships", "Deep Work Protection"
-
-### Goal Refinement
-- Adjust existing goals based on monthly learning
-- Set specific, measurable targets for the new month
-- Identify key milestones and success metrics
-
-### System Improvements
-- Implement 2-3 specific workflow optimizations
-- Update templates or processes based on insights
-- Plan experiments to test new approaches
-
-## Success Indicators
-
-A good monthly review helps you:
-- ✅ Gain clear perspective on strategic progress
-- ✅ Identify and implement systematic improvements
-- ✅ Feel energized and focused for the month ahead
-- ✅ Make data-driven adjustments to goals and methods
-
-## Integration with Quarterly Planning
-
-Monthly reviews feed into quarterly strategic sessions. Save your monthly summaries - they become the foundation for quarterly goal setting and annual planning cycles.
-
-## Documentation
-Store monthly summaries in `Summaries/Monthly-[YEAR]/` for easy reference and pattern analysis across longer time periods.
-
----
-
-*The monthly review is your strategic checkpoint - use it to ensure your daily and weekly efforts are building toward meaningful long-term outcomes. Let AI help you see patterns and opportunities you might miss in the day-to-day flow.*
+If the evidence is sparse, keep the review short and say what remains unknown.

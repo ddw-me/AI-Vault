@@ -6,13 +6,13 @@ The complete execution rules are in [Daily Workflow — AI Instructions](../000%
 
 ### Morning Roll
 ```
-Good morning. Roll today's daily note using the AI Daily Workflow. Review yesterday's note, available projects and planning context, carry forward relevant work, and propose a Daily Frog and priorities for my review.
+Good morning. Roll today's daily note using the AI Daily Workflow. Review the most recent previous note, available projects and planning context, carry forward relevant work, and propose a Daily Frog and priorities for my review.
 ```
 **Result**: Reviews available context, updates or creates today's note when requested, proposes a Daily Frog and priorities, and reports unresolved items or missing context
 
 ### Morning Review Without Changing Notes
 ```
-Review yesterday's daily note and available planning context. Suggest possible carry-forwards, a Daily Frog, and today's priorities, but do not create or change today's note yet.
+Review the most recent previous daily note and available planning context. Suggest possible carry-forwards, a Daily Frog, and today's priorities, but do not create or change today's note yet.
 ```
 **Result**: Produces a proposed plan for review without changing the vault
 
@@ -94,20 +94,20 @@ Based on the past month's daily notes and summaries, help me:
 
 **New Project Setup:**
 ```
-I need to create a new project called "[Project Name]". Please:
-1. Create a new markdown file in the "Active Projects/" folder named "[Project Name].md"
-2. Use the "Templates/Project Template.md" as the starting structure
-3. Fill in the project overview, success criteria, and stakeholder information
-4. Break down the project into actionable milestones and next steps
-5. Set realistic timelines based on my typical work patterns
+Create a draft project note named "[Project Name]" in "Active Projects/" using
+"Templates/Project Template.md". Use only the details I provide and information
+already in the vault. Leave unknown fields blank. Label proposed milestones,
+dates, estimates, and assumptions as proposed; do not invent stakeholders,
+deadlines, outcomes, or completed work. Show me the draft before making further
+changes.
 ```
-**Result**: Complete project file in correct location with structured planning
+**Result**: A clearly labeled project draft that can be completed by the user.
 
 **Project Planning:**
 ```
-Help me break down [project name] into actionable steps with realistic timelines based on my typical work patterns.
+Help me break down [project name] into actionable steps. Separate known commitments from proposed sequencing, estimates, and dates. Do not invent deadlines or dependencies.
 ```
-**Result**: Detailed project plan with sequenced actions and time estimates
+**Result**: A project plan with clearly labeled known facts, open questions, and proposals
 
 ### Goal Setting
 ```
@@ -150,7 +150,7 @@ Operations: What are the biggest bottlenecks in my current workflow, and what sp
 ```
 
 ```
-Operations: How can I automate or streamline the processes I do most frequently?
+Operations: How can I simplify or streamline the processes I do most frequently? Suggest manual or tool-supported changes, and do not assume scripts exist.
 ```
 
 ### CFO Agent (Business Focus)

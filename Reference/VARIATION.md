@@ -17,6 +17,7 @@ This branch is the stable, generic starting point for complete vault variations.
 - Kept daily, weekly, and monthly review ideas, templates, lightweight agents, and Git guidance.
 - Removed personal/company context and bookmark-management automation.
 - Added portable `AGENTS.md` guidance and branch/publishing documentation.
+- Kept optional community plugins in the edition but disabled them by default; see [Obsidian Setup](Obsidian%20Setup.md).
 
 ## Variation policy
 

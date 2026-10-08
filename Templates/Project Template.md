@@ -1,52 +1,39 @@
+<!-- Create this note in Active Projects when work needs more than one day's attention. Use only known information. Leave unknown fields blank. -->
 # Project: [Project Name]
 
-> **💡 Usage Note**: When creating a new project, save this file in the "Active Projects/" folder with the name "[Project Name].md". You can ask your AI assistant: "Create a new project called '[Project Name]' using the project template in the Active Projects folder."
+> **Usage note**: A project note is a draft until the user confirms its purpose, ownership, dates, and next actions. Do not invent missing details.
 
-**Status**: Planning | Active | Waiting | Complete | Cancelled
-**Start Date**: YYYY-MM-DD
-**Target Date**: YYYY-MM-DD
-**Last Updated**: YYYY-MM-DD
+**Status**: Draft | Active | Waiting | Complete | Cancelled **Start Date**: **Target Date**: **Last Updated**:
 
 ## Overview
-**Purpose**: What is this project trying to achieve?
-**Success Criteria**: How will we know it's complete?
-**Stakeholders**: Who cares about this project?
+**Purpose**: **Completion Condition**: How will we know it is complete? **Stakeholders**: People involved or affected, if known
 
 ## Current Status
 ### Next Actions
-- [ ] **Immediate next step** (Owner, Due Date)
-- [ ] **Second action** (Owner, Due Date)
-- [ ] **Third action** (Owner, Due Date)
+- [ ] Immediate next step, if known
 
 ### Waiting For
-- [ ] **Item waiting for** (Person, Follow-up Date)
+- [ ] Item waiting for — person or dependency — follow-up
 
 ### Completed Actions
-- [x] **Completed action** (Date completed)
+- Completed action — date
 
 ## Planning
 ### Outcome Vision
-*What does success look like? Paint the picture.*
+*Describe the intended outcome when it becomes clear.*
 
-### Key Milestones
-1. **Milestone 1** (Date) - Description
-2. **Milestone 2** (Date) - Description
-3. **Milestone 3** (Date) - Description
+### Proposed Milestones
+1. **Milestone** — proposed date or blank — description
 
 ### Resources Needed
-- **People**: Who needs to be involved?
-- **Tools**: What tools or systems are required?
-- **Information**: What research or data is needed?
-- **Budget**: Any financial requirements?
+- **People**:
+- **Tools**:
+- **Information**:
+- **Budget**:
 
 ## Progress Log
-### YYYY-MM-DD
-- **Progress**: What was accomplished
-- **Decisions**: Key decisions made
-- **Blockers**: Issues or obstacles
-- **Next**: What's planned next
-
-### YYYY-MM-DD
+### Progress Log Entry
+- **Date**:
 - **Progress**:
 - **Decisions**:
 - **Blockers**:

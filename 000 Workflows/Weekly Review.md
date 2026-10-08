@@ -1,87 +1,46 @@
 # Weekly Review Workflow
 
-## Purpose
-The weekly review helps you step back from daily execution to gain perspective, learn from patterns, and optimize your approach for the following week.
+The weekly review turns daily capture into a short view of what moved, what is stuck, and what deserves attention next. It should reduce uncertainty, not create another large reporting task.
 
-## When to Conduct
-**Friday evening** or **Saturday morning** - choose a consistent time when you can reflect without rushing into the next week's activities.
+## Review contract
 
-## AI-Assisted Weekly Review
+- **Review period:** Monday through Sunday in the user's local time, unless an explicit date range is requested.
+- **Sources:** Daily notes in the period, active projects, goals, and relevant waiting or delegated items. Use the monthly review when it exists, but do not require one.
+- **Output:** Create or update a note from [Weekly Summary Template](../Templates/Weekly%20Summary%20Template.md) in `Summaries/`.
+- **Evidence:** State which dates were reviewed. List missing daily notes when that affects the conclusion. Do not infer completion, trends, or metrics from missing evidence.
+- **Existing output:** Preserve personal reflections and accepted plans. Add or revise only what the review supports; do not overwrite a user's note with a fresh AI report.
+- **Authority:** AI may summarize and recommend. The user decides what to carry into the next week.
 
-### Step 1: Preparation (AI-Generated)
-Ask your AI assistant:
-```
-Please analyze this week's daily notes and create a weekly summary focusing on:
-- Key accomplishments and strategic progress
-- Patterns in productivity and energy (when was I most/least effective?)
-- Persistent tasks that need escalation or different approaches
-- Relationships and stakeholder interactions
-- Learning and skill development progress
-- Opportunities for process improvement next week
-```
+## Manual review
 
-### Step 2: Use the Template
-1. Create a new note using the [Weekly Summary Template](../Templates/Weekly%20Summary%20Template.md)
-2. Fill in sections using the AI-generated analysis as a starting point
-3. Add your own reflection and insights
+1. Read the daily notes for the review period.
+2. Mark what was completed, carried forward, delegated, dropped, or left undecided.
+3. Note meaningful accomplishments, friction, decisions, and learning.
+4. Choose a small number of next-week priorities.
+5. Record unresolved items in the appropriate project, goal, or daily note.
 
-### Step 3: Agent Perspectives
-Get specialized insights from different agent roles:
+## AI-assisted review
 
-**Historian Analysis:**
-```
-Historian: What patterns in my task completion and energy levels should I optimize for next week?
-```
+Ask an AI assistant to analyze the period using the contract above. A useful request is:
 
-**Curator Assessment:**
-```
-Curator: How well am I organizing and processing information? What knowledge management improvements should I make?
-```
+> Review the daily notes for [date range]. State which notes you reviewed and identify missing notes. Summarize accomplishments, open commitments, recurring friction, decisions, and learning. Do not invent facts or metrics. Recommend a small set of possible next-week priorities, clearly labeled as recommendations. Do not create or overwrite a summary until I approve it.
 
-**Scheduler Optimization:**
-```
-Scheduler: Based on this week's patterns, how should I structure next week for optimal productivity?
-```
+Optional perspectives can be requested separately when useful:
 
-**Operations Review:**
-```
-Operations: What friction points did I encounter this week, and what specific steps can eliminate them?
-```
+- **Historian:** What patterns are supported by the notes?
+- **Curator:** What should be moved into a project, reference note, or goal?
+- **Scheduler:** What commitments or energy patterns should shape next week?
+- **Operations:** What repeated friction deserves a concrete experiment?
 
-## Key Review Areas
+These perspectives are optional suggestions, not separate authorities or required agents.
 
-### Accomplishments
-- What were your biggest wins this week?
-- Which daily frogs got completed vs. carried forward?
-- What strategic progress was made?
+## Output checklist
 
-### Energy and Patterns
-- When were you most/least productive?
-- What types of work energized vs. drained you?
-- How well did you protect deep work time?
+A useful weekly review answers:
 
-### Process Optimization
-- What workflows served you well?
-- Where did you experience friction or inefficiency?
-- What tools or techniques helped most?
+- What moved forward?
+- What remains open, and what is the next action or dependency?
+- What did I learn about the work or the system?
+- What should I focus on next week?
 
-### Planning Forward
-- What themes should guide next week?
-- Which persistent tasks need different approaches?
-- How can you build on this week's successes?
-
-## Success Indicators
-
-A good weekly review helps you:
-- ✅ Feel clear about progress and direction
-- ✅ Identify specific optimizations for next week
-- ✅ Process and learn from the week's experiences
-- ✅ Enter the new week with intentional focus
-
-## Integration with Monthly Planning
-
-Weekly reviews feed into monthly summaries and quarterly planning. Save your weekly summary notes - they become valuable data for larger-scale strategic thinking.
-
----
-
-*The weekly review is your opportunity to work ON your workflow, not just IN it. Use AI assistance to spot patterns you might miss and get objective insights about your productivity systems.*
+If the available notes are sparse, say so and keep the review short.

@@ -1,138 +1,47 @@
 # AI Agent Framework
 
-Virtual agents handle specific responsibilities in your workflow, providing specialized assistance and maintaining system health.
+These are optional perspectives you can ask one AI assistant to use. They do not run automatically. An assistant can analyze only the notes and tools it can access. Read `AGENTS.md` and the relevant workflow before asking it to change the vault.
 
-## Core Agents
+You can use this framework in two ways:
 
-### 🏛️ Historian
-**Primary Role**: Activity tracking and pattern analysis
-- Track all daily activities and generate summaries
-- Identify productivity patterns and energy cycles
-- Create weekly/monthly summaries from daily notes
-- Monitor task persistence and completion trends
-- Generate insights about successful workflows
+- Open the vault in an AI tool that has file access, then ask it to follow the relevant workflow.
+- Use a chat assistant and provide only the selected notes and instructions it needs for the question.
 
-**Key Capabilities:**
-- Weekly summary generation
-- Task completion pattern analysis
-- Energy and focus trend identification
-- Progress tracking for long-term projects
+The names below are roles, not separate processes or required software. One assistant can use one or several perspectives in a single review.
 
-### 📚 Curator
-**Primary Role**: Information organization and knowledge management
-- Organize captured notes and cross-reference content
-- Categorize information for long-term storage
-- Suggest organizational improvements
-- Maintain consistency in tagging and structure
-- Organize captured notes and maintain useful cross-references
+## Core perspectives
 
-**Key Capabilities:**
-- Note categorization and filing
-- Cross-reference maintenance
-- Organizational health checks
-- Content consolidation recommendations
+### Historian
 
-### ⏰ Scheduler
-**Primary Role**: Time and energy optimization
-- Analyze energy patterns for optimal task scheduling
-- Batch similar activities for efficiency
-- Identify scheduling conflicts and opportunities
-- Optimize calendar management
-- Protect deep work time blocks
+Reviews activity and identifies patterns supported by the notes. It can help with weekly or monthly summaries, but should not invent metrics from missing notes.
 
-**Key Capabilities:**
-- Energy pattern analysis
-- Task batching recommendations
-- Calendar optimization
-- Context switching minimization
+### Curator
 
-### ⚙️ Operations
-**Primary Role**: System health and process improvement
-- Monitor workflow friction points
-- Identify bottlenecks and inefficiencies
-- Recommend process improvements
-- Track system health and performance
-- Suggest automation opportunities
+Suggests where information belongs, whether a note should become a project or reference, and where repeated context could be consolidated.
 
-**Key Capabilities:**
-- Friction point identification
-- Process optimization recommendations
-- System health monitoring
-- Workflow enhancement suggestions
+### Scheduler
 
-### 💰 CFO (Optional)
-**Primary Role**: Business impact and ROI analysis
-- Evaluate financial impact of activities
-- Track business outcomes and value creation
-- Prioritize based on ROI potential
-- Monitor goal achievement metrics
-- Provide strategic perspective on time investments
+Considers commitments, dependencies, available time, and observed energy patterns when suggesting an order for work. The user makes the final choice.
 
-**Key Capabilities:**
-- ROI analysis for projects and activities
-- Value-based priority ranking
-- Strategic outcome tracking
-- Resource allocation optimization
+### Operations
 
-### 📢 Publisher (Optional)
-**Primary Role**: Content creation and sharing
-- Identify shareable insights and content
-- Create summaries for team communication
-- Manage documentation and knowledge sharing
-- Track content creation and distribution
-- Suggest opportunities for thought leadership
+Identifies recurring friction and suggests small manual or tool-supported experiments. It should not assume that scripts, automations, or integrations exist.
 
-**Key Capabilities:**
-- Meeting summary generation
-- Content creation recommendations
-- Documentation management
-- Stakeholder communication support
+### CFO (optional)
 
-## How to Work with Agents
+Offers a value or resource-allocation perspective when financial or business impact is genuinely relevant. It is not required for ordinary personal planning.
 
-### Daily Interaction
-Ask agents for help with specific tasks:
-```
-Historian, can you analyze my task completion patterns this week?
-Curator, how should I organize these project notes?
-Scheduler, what's the optimal sequence for today's tasks?
-Operations, what friction points did you notice in my workflow?
+### Publisher (optional)
+
+Helps identify useful learnings and draft clear summaries for an intended audience. It does not publish or send anything without explicit authorization.
+
+## Example requests
+
+```text
+Historian: What patterns are actually supported by this week's notes?
+Curator: Should this information stay in the daily note or move to a project?
+Scheduler: What is a reasonable order for these priorities given today's commitments?
+Operations: What small change might reduce this repeated friction?
 ```
 
-### Weekly Reviews
-Agents provide specialized perspectives:
-```
-Please provide your weekly agent reports focusing on:
-- Historian: Activity patterns and productivity trends
-- Curator: Information organization health
-- Scheduler: Energy optimization opportunities
-- Operations: Process improvement recommendations
-```
-
-### Monthly Planning
-Agents contribute to strategic planning:
-```
-Based on last month's data, help me plan next month:
-- What patterns should I optimize?
-- Where are the biggest friction points?
-- What organizational improvements are needed?
-- How can I better align energy with priorities?
-```
-
-## Agent Collaboration
-
-Agents work together to provide comprehensive support:
-- **Historian + Scheduler**: Energy patterns inform optimal scheduling
-- **Curator + Operations**: Organization health affects system efficiency
-- **CFO + Publisher**: Business impact guides content creation priorities
-- **All Agents**: Weekly reviews combine all perspectives for complete analysis
-
-## Customization
-
-Feel free to:
-- **Modify agent roles** to match your specific needs
-- **Add specialized agents** for your domain (Technical Lead, Researcher, etc.)
-- **Remove agents** that don't apply to your work
-- **Combine agent functions** if you prefer fewer, broader roles
-
-The goal is to have AI assistance that feels natural and actually reduces friction in your daily workflow.
+Treat the response as analysis or recommendation unless the user explicitly authorizes a vault update.

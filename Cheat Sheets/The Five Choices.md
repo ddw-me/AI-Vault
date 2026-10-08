@@ -1,9 +1,7 @@
 
 # THE 5 CHOICES to Extraordinary Productivity
 
-> **Provisional legacy note:** This material is retained for now because it was
-> part of the source workflow. It is not required for onboarding and may later
-> move to a variation branch or be replaced with an original, shorter note.
+> **Provisional legacy note:** This material is retained for now because it was part of the source workflow. It is not required for onboarding and may later move to a variation branch or be replaced with an original, shorter note.
 
 1. **ACT ON THE IMPORTANT DON'T REACT TO THE URGENT** Do you have the ability to clearly evaluate which choices will give you the highest return on your time and attention?
 

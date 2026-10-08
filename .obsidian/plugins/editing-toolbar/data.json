@@ -483,11 +483,11 @@
   "toolbarIconSize": 18,
   "useCurrentLineForRegex": false,
   "ai": {
-    "enabled": true,
-    "showAIContextMenu": true,
-    "consentAccepted": true,
-    "onboardingShown": true,
-    "providerMode": "pkmer-first",
+    "enabled": false,
+    "showAIContextMenu": false,
+    "consentAccepted": false,
+    "onboardingShown": false,
+    "providerMode": "unconfigured",
     "enableInlineCompletion": true,
     "inlineCompletionHintLearned": false,
     "completionTrigger": "manual",
@@ -495,14 +495,14 @@
     "enableRewrite": true,
     "showRewriteToolbarOnSelection": false,
     "rewriteMinSelectionLength": 1,
-    "pkmerApiBaseUrl": "https://newapi.pkmer.cn",
-    "pkmerModel": "04-fast",
+    "pkmerApiBaseUrl": "",
+    "pkmerModel": "",
     "pkmerModelRouting": {
-      "mode": "smart",
-      "completion": "04-fast",
-      "rewrite": "04-fast",
-      "reasoning": "03-agent",
-      "artifact": "03-agent"
+      "mode": "",
+      "completion": "",
+      "rewrite": "",
+      "reasoning": "",
+      "artifact": ""
     },
     "pkmer": {
       "tokenExpiresAt": 0,

@@ -1,85 +1,32 @@
 ## Plan
 ### Daily Frog 🐸
-- [ ] **Daily Frog**: The most important useful next action for today
+- [ ] Daily Frog: The most important useful next action for today
 
 ### Today's Priorities
-- [ ] **Priority 1**: Most important task
-- [ ] **Priority 2**: Second most important
-- [ ] **Priority 3**: Third most important
-
-### Daily Wins 🏆
-*Celebrate progress and positive momentum (or last week's wins if starting a new week)*
-
-- **Win 1**: Achievement or progress made
-- **Win 2**: Problem solved or milestone reached
-- **Win 3**: Learning or insight gained
-
-### This Week
-- [ ] Ongoing weekly tasks
-
-### Quick Wins
-- [ ] Small task that can be completed or batched when time allows
-
-### Waiting / Delegated
-- [ ] **Item** | **Owner or dependency** | **Follow-up**
-
-## Execution
-### Calls
-- **Time** | **Person** | **Topic** | **Key Outcome** | **Follow-up**
-
-### Code
-- [ ] **Project** | **Task** | **Status** | **Next Step**
-
-### Draw/Design
-- [ ] **Drawing** | **Purpose** | **Status** | **Share With**
-
-### Share
-- [ ] **Content** | **Audience** | **Channel** | **Status**
+- [ ] Priority 1
+- [ ] Priority 2
+- [ ] Priority 3
 
 ## Capture
 ### Notes
-*Meeting notes, ideas, observations*
 
-### Decisions Made
-- **Decision**: What was decided | **Context**: Why | **Impact**: Expected outcome
+### Decisions
 
 ### Learning
-- **Insight**: What I learned | **Application**: How I'll use this
 
-### Feedback
-*Feedback received from various channels - customers, team members, stakeholders*
+## Quick Wins
+- [ ]
 
-- **Source**: Who provided feedback | **Channel**: How received | **Topic**: What about | **Action**: Next steps or investigation needed
+## Waiting / Delegated
+- [ ] Item — owner or dependency — follow-up
 
-### AI Assistant Notes
-*Optional instructions or recommendations for the next AI interaction*
+## AI Assistant Notes
+### User Instructions for Next AI Session
+<!-- Human-written instructions for a future AI interaction. Do not put scripts or commands here. -->
 
-- **(AI Assistant:)** Instruction or recommendation for the next AI interaction:
-
-## Reflection
-### What Went Well
-- Successes, good decisions, effective practices
-
-### What Could Improve
-- Challenges, inefficiencies, opportunities
-
-### Energy Assessment
-- **Focus Quality**: Deep work effectiveness (1-10)
-- **Energy Pattern**: Morning/afternoon/evening levels
-- **Interruption Impact**: How well I managed distractions
+### AI Recommendations
+<!-- AI-generated suggestions are advisory, not user instructions. -->
 
 ## Tomorrow
-### Priorities Set
-1. **Most Important**:
-2. **Second Priority**:
-3. **Third Priority**:
-
-### Context Preparation
-- **Files/Resources Needed**:
-- **Calendar Review**:
-- **Follow-ups Due**:
-
-### Carry-Forward
-- **Not Completed**: What and why
-- **New Items**: Emerged from today's work
-- **Decision**: Carry forward, move to project, delegate, schedule, drop, or needs decision
+### Carry-Forward Decisions
+- Item — carry forward, move to a project, delegate, schedule, drop, or needs a decision
