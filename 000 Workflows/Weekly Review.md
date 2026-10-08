@@ -21,7 +21,7 @@ Please analyze this week's daily notes and create a weekly summary focusing on:
 ```
 
 ### Step 2: Use the Template
-1. Create a new note using `Templates/Weekly Summary Template.md`
+1. Create a new note using the [Weekly Summary Template](../Templates/Weekly%20Summary%20Template.md)
 2. Fill in sections using the AI-generated analysis as a starting point
 3. Add your own reflection and insights
 

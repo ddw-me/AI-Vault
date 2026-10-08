@@ -1,103 +1,199 @@
-## First-Time Setup
+# Daily Workflow — AI Instructions
 
-**To set up your daily workflow, you'll need to configure Obsidian's Daily Notes feature:**
+This file is the execution contract for an AI assistant working in this vault.
+It describes what the assistant should do when the user asks it to roll the
+daily notes, plan the day, capture work, or close out the day.
 
-1. **Open Obsidian Settings** (click the gear icon ⚙️ in the left sidebar)
-2. **Navigate to "Daily notes"** in the left panel
-3. **Configure these settings:**
-   - ✅ **Enable Daily notes** (toggle on if not already enabled)
-   - ✅ **New file location**: Set to `Daily Notes`
-   - ✅ **Template file location**: Set to `Templates/Daily Notes Template.md`
-   - ✅ **Date format**: Leave as default (`YYYY-MM-DD`) unless you prefer another format
+The human-facing explanation is in [Daily Rolling Guide](../Cheat%20Sheets/Daily%20Rolling%20Guide.md).
+Do not treat the explanatory guide, examples, or templates as work items.
 
-**Why this matters:** These settings ensure that when you create daily notes (Ctrl/Cmd + P → "Open today's daily note"), they'll be placed in the correct folder and use our structured template automatically.
+## Scope and authority
 
-Once configured, you can create your first daily note and start using the AI-native workflow!
+Follow these rules when the user asks for a morning roll, daily plan, daily
+note update, carry-forward review, or end-of-day cleanup.
 
-**Additional Settings for Better Organization:**
+- Work from the vault root and use the existing folders and templates.
+- Treat the current user request as the highest-priority source of intent.
+- Preserve existing notes. Do not silently delete, rewrite, or relocate user
+  content.
+- Do not invent tasks, dates, commitments, meetings, priorities, or outcomes.
+- The AI may analyze context and propose a plan. When the user explicitly asks
+  for a roll or update, it may create or update the appropriate daily note.
+- Keep recommendations visible as recommendations until the user accepts or
+  changes them. Do not present an AI suggestion as a user decision.
 
-While you are there, go to **Settings → Files and Links**, and configure:
-- ✅ **Default Location for New Attachments**: `In subfolder under current folder`
-- ✅ **Subfolder name**: Leave as `attachments` or customize as needed
+## Date and time
 
-**Why this matters:** This keeps your pasted images and files organized in dedicated attachment folders, preventing your main note directories from becoming cluttered with media files.
+Before creating or rolling a dated note:
 
----
+1. Determine the current date and weekday from the host environment or an
+   available time/date tool.
+2. Do not calculate the date from memory or assume that the system date in a
+   previous note is current.
+3. Use the user's local timezone when it is known. If the timezone is unknown
+   and the date affects the result, state the assumption.
 
-## Daily Note Rolling Process
+If a date or weekday cannot be established reliably, do not create a note with
+an uncertain date. Report the problem and ask the user.
 
-### Morning Planning (5-10 minutes)
-**Human Responsibilities:**
-1. **Daily Note Creation**: Create new daily note for today (YYYY-MM-DD.md format)
-2. **Carry-Forward Analysis**: Review yesterday's incomplete tasks and priorities
-3. **Daily Frog Selection**: Identify the most important task (persistent Daily Frogs get priority!)
-4. **Priority Setting**: Set 3 key priorities for the day
-5. **Calendar Integration**: Note scheduled calls and meetings
-6. **Weekly Theme Alignment**: Connect daily work to weekly/monthly themes
+## Context discovery
 
-**AI Assistant Support:**
-- Analyze yesterday's daily note for incomplete tasks
-- **Carry forward Active Projects** until marked complete or cancelled
-- Suggest priority ranking based on persistence and importance
-- Identify patterns in task completion and energy levels
-- Recommend optimal sequencing for planned activities
+Use the following context, in this order:
 
-### Key Morning Prompt
-```
-Good morning, today is [Date]. Could you roll the daily notes as usual?
-```
+1. The current user request and explicit commitments.
+2. [About Me](../Reference/About%20Me.md), if it exists and contains useful
+   context.
+3. Today's daily note, if it already exists.
+4. Calendar commitments and fixed deadlines, when available.
+5. Yesterday's daily note and its open items.
+6. Notes in `Active Projects/` and `Goals/`.
+7. The most recent weekly review, if available.
+8. The current monthly review or plan, if available.
 
-The AI will:
-1. ✅ Read yesterday's daily note for incomplete tasks
-2. ✅ Create today's daily note with carry-forwards
-3. ✅ Set up the structured template
-4. ✅ Choose the day's most important task
+Higher-level planning informs recommendations but does not override an urgent
+commitment or an explicit user decision.
 
-## During the Day
+### Fail-open context rule
 
-### Continuous Capture
-- **All notes go in Daily Note**: Timestamped entries for meetings, decisions, observations
-- **Real-time task updates**: Check off completed items, add new discoveries
-- **Context preservation**: Capture enough detail for future reference and AI processing
+Missing context must reduce the information available to the AI, not stop the
+workflow.
 
-### Energy and Focus Management
-- **Deep work protection**: Batch similar activities when possible
-- **Context switching awareness**: Note interruptions and their impact
-- **Energy tracking**: Monitor focus quality and effectiveness patterns
+- If there is no monthly plan, continue with weekly reviews, projects, goals,
+  daily notes, and the current request.
+- If `Reference/About Me.md` is missing or still a blank template, continue
+  without personal context. Do not infer personal preferences or ask the user
+  to fill it in as a condition of running the workflow.
+- If there is no weekly review, continue with projects, goals, and daily notes.
+- If there are no projects or goals, continue with the current request and
+  daily notes.
+- If yesterday's note is missing, start a new note without reconstructing work
+  that is not available.
+- Do not invent missing priorities. Mention missing context only when it
+  materially affects the recommendation.
 
-## End-of-Day Review (10-15 minutes)
+## Morning roll
 
-### Human Responsibilities:
-1. **Task Status Update**: Mark completed items, note partial progress
-2. **Reflection Completion**: What went well, what could improve, energy assessment
-3. **Tomorrow Planning**: Set preliminary priorities and context needs
-4. **Carry-Forward Preparation**: Identify persistent tasks and their escalation status
+When the user asks to roll the daily notes or prepare the day, follow these
+steps.
 
-### AI Assistant Support:
-- Analyze task completion patterns and identify friction points
-- Suggest improvements for tomorrow's planning
-- Track persistent tasks (especially Daily Frogs) for escalation
-- Generate insights about energy patterns and optimal work timing
+### 1. Read the source notes
 
-## Weekly Integration
+Read yesterday's note completely before deciding what to carry forward. Also
+read today's note if it already exists. Look for:
 
-### Monday Morning:
-- Review previous week's carry-forwards and persistent tasks
-- Align daily goals with monthly themes and quarterly objectives
-- Set weekly focus areas based on monthly planning
+- unchecked tasks and incomplete priorities;
+- `Tomorrow` and `Carry-Forward` sections;
+- `Quick Wins`;
+- `Waiting / Delegated` items and promised follow-ups;
+- calls, commitments, and action items;
+- project work that needs another step;
+- user instructions beginning with `(AI Assistant:)` in the daily note.
 
-### Friday Evening:
-- Weekly summary generation with agent support (see `Weekly Review.md`)
-- Identification of successful patterns and friction points
-- Planning optimization for following week
+Do not rely only on unchecked checkboxes. Important work may be recorded as
+plain text, a follow-up, a decision, or an instruction.
 
-## Success Metrics
-- **Daily Frog Completion Rate**: Tracking persistent vs. completed important tasks
-- **Priority Achievement**: Percentage of daily priorities completed
-- **Energy Optimization**: Correlation between planned activities and actual energy levels
-- **Carry-Forward Reduction**: Trend in persistent uncompleted tasks
-- **Weekly Theme Alignment**: Connection between daily activities and strategic goals
+### 2. Classify every open item
 
-## Related Workflows
-- **Weekly Review**: `000 Workflows/Weekly Review.md` - Strategic weekly perspective and optimization
-- **Monthly Review**: `000 Workflows/Monthly Review.md` - Comprehensive monthly analysis and planning
+For each item that may continue into today, assign one disposition:
+
+- **Complete:** already finished or no longer open.
+- **Carry forward:** still relevant and has a clear next action.
+- **Move to project:** needs multiple steps or will span several days.
+- **Delegate / Waiting:** another person or external event owns the next step.
+- **Schedule:** belongs on a later date or depends on a fixed commitment.
+- **Drop:** no longer needed, duplicated, or deliberately abandoned.
+- **Needs decision:** the available context is insufficient; surface it to the
+  user rather than guessing.
+
+Do not silently drop an item. If an item is not carried forward, report its
+disposition in the result or record the decision in the daily note.
+
+### 3. Create or update today's note
+
+If today's note does not exist, create it from
+[Daily Notes Template](../Templates/Daily%20Notes%20Template.md). If it exists,
+preserve its content and update only the relevant planning or carry-forward
+sections.
+
+Carry forward enough context to make each item actionable. Do not copy an
+entire old note into today's note, and do not copy an item merely because it
+was unchecked.
+
+Keep these categories distinct:
+
+- the user's priorities and commitments;
+- AI suggestions;
+- waiting or delegated work;
+- notes and observations captured during the day.
+
+### 4. Prepare the daily plan
+
+Use available commitments, time, project context, and open items to prepare:
+
+- one proposed Daily Frog;
+- a small set of proposed priorities;
+- a realistic sequence or time allocation;
+- any blocker, dependency, or conflict that should be visible.
+
+The AI may choose a strong candidate and explain why, or offer several
+candidates for review. The user may accept, change, or reject the proposal.
+Do not fill the day beyond its available capacity.
+
+The Daily Frog should usually be a concrete next action that removes friction,
+unblocks work, or handles an important avoided task. It does not need to be
+the largest or most difficult project task, and persistence is context rather
+than a score or a reason to shame the user.
+
+### 5. Verify the result
+
+Before reporting completion, check that:
+
+- today's note has the correct date and template structure;
+- every relevant open item has a visible disposition;
+- Quick Wins and Waiting / Delegated items were not silently lost;
+- user instructions were not mistaken for ordinary tasks;
+- proposed priorities fit known commitments and available time;
+- no invented facts, dates, meetings, or outcomes were added.
+
+Report the note created or updated, the proposed Daily Frog and priorities,
+items carried forward, items needing a decision, and any missing context that
+limited the analysis.
+
+## During-day support
+
+When the user asks to capture or process something during the day:
+
+- add requests, decisions, observations, and outcomes to today's note;
+- use **Delegate, Record, or Do** for new work;
+- record the owner and follow-up when work is delegated or waiting;
+- move multi-step work to `Active Projects/` when appropriate, preserving a
+  pointer in the daily note;
+- keep AI suggestions visibly separate from confirmed user decisions;
+- do not turn a casual observation into a task without the user's intent.
+
+Treat `(AI Assistant: ...)` entries as instructions to process during the next
+relevant AI interaction. Preserve them until they are handled or the user
+explicitly removes them.
+
+## End-of-day review
+
+When the user asks to close out the day or prepare tomorrow:
+
+1. Review today's note and identify completed work, partial progress, and open
+   items.
+2. Record meaningful outcomes rather than only marking checkboxes.
+3. Give every open item a disposition: carry forward with a next action, move
+   to a project, delegate, wait, schedule, drop, or ask for a decision.
+4. Prepare a short starting point for tomorrow.
+5. Do not claim that an item is complete merely because it was discussed.
+
+## Boundaries
+
+This workflow does not require bookmarks, HTML files, custom scripts, a named
+automation framework, a monthly plan, or a specific AI product. If a local
+installation provides additional tools, use them only when the user requests
+that capability and the vault documents it.
+
+For weekly and monthly synthesis, use the [Weekly Review](./Weekly%20Review.md)
+and [Monthly Review](./Monthly%20Review.md) workflows rather than expanding
+the daily roll into a long-term planning process.

@@ -1,122 +1,98 @@
-# Quick Start Reference
+# Quick Start
 
-## 🚀 Essential Daily Commands
+This is the only onboarding guide for the vault. Start small: daily notes are
+enough for the first week. Add projects, reviews, and AI assistance as they
+become useful.
 
-### Morning Startup
-```
-Good morning, today is [Date]. Could you roll the daily notes as usual?
-```
+## 1. Install and open the vault
 
-### Planning Help
-```
-Help me plan my day. Review my priorities and suggest optimal sequencing.
-```
+1. Install [Obsidian](https://obsidian.md/) on the computer or device you will
+   use most often.
+2. Open the repository's root directory as an Obsidian vault. Do not open one
+   of its subdirectories as the vault.
+3. Read [AGENTS.md](../AGENTS.md) for the portable rules.
 
-### Meeting Summary
-```
-Summarize today's [meeting type] notes for sharing with [audience].
-```
+The vault may live in Dropbox or another synchronized folder for access from
+multiple devices. Git commits are best made from a computer where Git is
+configured. Synchronization and Git provide different things: synchronization
+provides access, while Git provides history and recovery.
 
-### Weekly Review
-```
-Create a weekly summary focusing on accomplishments, patterns, and improvements.
-```
+## Optional: add personal context
 
-## 📁 File Structure at a Glance
+If you want AI assistance to reflect your background and working preferences,
+fill in [About Me](../Reference/About%20Me.md). This is optional: leave the
+template blank if you do not want to provide personal context. Do not put
+passwords, credentials, private keys, or other secrets in it.
 
-```
-Vault root/
-├── 000 Workflows/       # How to use this system
-├── 100 Agents/          # AI assistant roles
-├── Templates/           # Note templates
-├── Daily Notes/         # Daily note files (YYYY-MM-DD.md)
-├── Active Projects/     # Current project docs
-├── Cheat Sheets/        # Quick references (like this one)
-├── Summaries/           # Weekly/monthly summaries
-└── Goals/               # Objectives and aspirations
-```
+## 2. Configure Daily Notes
 
-## 🤖 Agent Quick Reference
+In Obsidian, open Settings and configure Daily notes:
 
-| Agent | Use For | Example Prompt |
-|-------|---------|----------------|
-| **Historian** | Pattern analysis, productivity insights | "Historian: What patterns predict my best work days?" |
-| **Curator** | Information organization | "Curator: How should I organize these project notes?" |
-| **Scheduler** | Time/energy optimization | "Scheduler: What's the optimal sequence for today's tasks?" |
-| **Operations** | Process improvement | "Operations: What friction points can we eliminate?" |
+- **New file location:** `Daily Notes`
+- **Template file location:** `Templates/Daily Notes Template.md`
+- **Date format:** `YYYY-MM-DD`, unless you have a reason to change it
 
-## 📝 Daily Note Structure
+In Settings → Files and Links, set the default attachment location to a
+subfolder under the current folder. This keeps pasted images and files beside
+the note that uses them.
 
-```markdown
-## Plan
-### Daily Frog 🐸
-- [ ] Most important task
+## 3. Create the first note
 
-### Today's Priorities
-- [ ] Priority 1
-- [ ] Priority 2
-- [ ] Priority 3
+Create today's daily note using the configured template. Then:
 
-## Execution
-### Calls | Code | Draw/Design | Share
+1. Review the previous daily note, if one exists.
+2. Choose one Daily Frog and a small number of realistic priorities.
+3. Capture requests, decisions, ideas, and observations in today's note.
+4. At the end of the day, decide what is complete, what carries forward, and
+   what no longer matters.
 
-## Capture
-### Notes | Decisions Made | Learning
+Read the human-facing [Daily Rolling Guide](./Daily%20Rolling%20Guide.md) for
+the morning, daytime, and end-of-day cycle. AI tools should follow the
+[AI Daily Workflow](../000%20Workflows/000%20Daily%20Workflow.md) when rolling
+or updating notes.
 
-## Reflection
-### What Went Well | What Could Improve | Energy Assessment
+## 4. Learn the basic structure
 
-## Tomorrow
-### Priorities Set | Context Preparation | Carry-Forward
-```
+| Folder | Use it for |
+| --- | --- |
+| `Daily Notes/` | Daily capture, planning, and reflection |
+| `Active Projects/` | Work that needs more than one day's attention |
+| `Goals/` | Longer-term objectives and aspirations |
+| `Summaries/` | Weekly and monthly review outputs |
+| `Templates/` | Repeatable note shapes |
+| `Cheat Sheets/` | Short references and practical guidance |
+| `000 Workflows/` | How the recurring processes work |
+| `100 Agents/` | Optional AI role descriptions |
 
-## 📅 Weekly Rhythm
+For the reasoning behind the cycle and the Daily Frog, read [Time Management
+and Using This Vault](./Time%20Management%20and%20Using%20This%20Vault.md).
 
-| Day | Focus |
-|-----|-------|
-| **Monday** | Review last week's carry-forwards, set weekly priorities |
-| **Tuesday-Thursday** | Execution and daily rhythm |
-| **Friday** | Weekly review and next week planning |
-| **Weekend** | Monthly planning (if needed) |
+## 5. Add structure gradually
 
-## 🎯 Success Metrics
+During the first week, focus on capturing and reviewing. After that, add only
+the structure that solves a real problem:
 
-- Daily Frog completion rate
-- Priority achievement percentage
-- Carry-forward trend (decreasing = good)
-- Energy optimization (high-energy work in peak hours)
-- Weekly theme alignment
+- create an active project when work spans multiple days or has several steps;
+- use the [Weekly Review](../000%20Workflows/Weekly%20Review.md) to see what is
+  drifting and plan the next week;
+- use the [Monthly Review](../000%20Workflows/Monthly%20Review.md) to look at
+  longer arcs and adjust the system;
+- use Git for checkpoints when the notes are valuable enough to preserve.
 
-## 🆘 Troubleshooting
+## Optional AI assistance
 
-| Problem | Solution |
-|---------|----------|
-| Overwhelmed by options | Start with just daily notes for one week |
-| AI not helpful | Ask more specific questions with context |
-| Tasks keep carrying forward | Break them down smaller or address blockers |
-| System feels heavy | Simplify - remove unused sections |
-| Not seeing patterns | Give it time - patterns emerge after 2-3 weeks |
+AI is optional. It can help analyze notes, suggest smaller next actions, or
+prepare a review, but it should not silently invent tasks or decide what you
+value. Useful starting prompts include:
 
-## 🏃‍♂️ Speed Run Setup
+- “Review yesterday's daily note and suggest possible carry-forwards. Do not
+  create today's note yet.”
+- “Help me choose a Daily Frog from today's open items.”
+- “Summarize this week's notes and identify work that needs a deliberate next
+  step.”
 
-### Step 1: Configure Obsidian Daily Notes
-After opening your vault in Obsidian:
+## If the system feels heavy
 
-1. **Go to Settings** (gear icon) → **Daily notes**
-2. **Set New file location**: `Daily Notes`
-3. **Set Template file location**: `Templates/Daily Notes Template.md`
-4. **Enable Daily notes** if not already enabled
-
-### Step 2: Start Using the System
-1. **Create today's daily note** using template (Ctrl/Cmd + P → "Open today's daily note")
-2. **Set 3 priorities** for today
-3. **Pick one "Daily Frog"** (most important task)
-4. **Use the system** - capture everything in daily note
-5. **End-of-day reflection** - what worked, what didn't
-6. **Morning roll** tomorrow with AI assistance
-
-That's it! You're now using an AI-native productivity system. Everything else is optimization and customization.
-
----
-
-*Remember: Perfect is the enemy of good. Start messy, improve iteratively, let AI help you optimize.*
+Return to the smallest useful pattern: one daily note, one Daily Frog, a few
+priorities, and a short end-of-day cleanup. The system is working when it helps
+you remember and focus, not when every section is filled in.

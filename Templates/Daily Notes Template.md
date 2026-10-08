@@ -1,6 +1,6 @@
 ## Plan
 ### Daily Frog 🐸
-- [ ] **Eat the Frog**: The most important/difficult task to tackle first
+- [ ] **Daily Frog**: The most important useful next action for today
 
 ### Today's Priorities
 - [ ] **Priority 1**: Most important task
@@ -16,6 +16,12 @@
 
 ### This Week
 - [ ] Ongoing weekly tasks
+
+### Quick Wins
+- [ ] Small task that can be completed or batched when time allows
+
+### Waiting / Delegated
+- [ ] **Item** | **Owner or dependency** | **Follow-up**
 
 ## Execution
 ### Calls
@@ -45,6 +51,11 @@
 
 - **Source**: Who provided feedback | **Channel**: How received | **Topic**: What about | **Action**: Next steps or investigation needed
 
+### AI Assistant Notes
+*Optional instructions or recommendations for the next AI interaction*
+
+- **(AI Assistant:)** Instruction or recommendation for the next AI interaction:
+
 ## Reflection
 ### What Went Well
 - Successes, good decisions, effective practices
@@ -71,3 +82,4 @@
 ### Carry-Forward
 - **Not Completed**: What and why
 - **New Items**: Emerged from today's work
+- **Decision**: Carry forward, move to project, delegate, schedule, drop, or needs decision

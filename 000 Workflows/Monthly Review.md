@@ -21,7 +21,7 @@ Based on the past month's daily notes and weekly summaries, help me:
 ```
 
 ### Step 2: Use the Template
-1. Create a new note using `Templates/Monthly Summary Template.md`
+1. Create a new note using the [Monthly Summary Template](../Templates/Monthly%20Summary%20Template.md)
 2. Use the AI analysis to inform each section
 3. Add deeper strategic thinking and planning
 

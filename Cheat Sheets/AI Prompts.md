@@ -2,11 +2,25 @@
 
 ## Daily Workflow Prompts
 
-### Morning Startup
+The complete execution rules are in [Daily Workflow — AI Instructions](../000%20Workflows/000%20Daily%20Workflow.md). The human-facing explanation is in the [Daily Rolling Guide](./Daily%20Rolling%20Guide.md).
+
+### Morning Roll
 ```
-Good morning, today is [Date]. Could you roll the daily notes as usual?
+Good morning. Roll today's daily note using the AI Daily Workflow. Review yesterday's note, available projects and planning context, carry forward relevant work, and propose a Daily Frog and priorities for my review.
 ```
-**Result**: Creates or prepares a new daily note and processes yesterday's carry-forwards
+**Result**: Reviews available context, updates or creates today's note when requested, proposes a Daily Frog and priorities, and reports unresolved items or missing context
+
+### Morning Review Without Changing Notes
+```
+Review yesterday's daily note and available planning context. Suggest possible carry-forwards, a Daily Frog, and today's priorities, but do not create or change today's note yet.
+```
+**Result**: Produces a proposed plan for review without changing the vault
+
+### End-of-Day Cleanup
+```
+Close out today's daily note using the AI Daily Workflow. Review completed work and every open item, then propose or record the correct disposition for each item and leave a useful starting point for tomorrow.
+```
+**Result**: Records outcomes, identifies unresolved work, and prepares deliberate carry-forwards
 
 ### Planning and Prioritization
 ```

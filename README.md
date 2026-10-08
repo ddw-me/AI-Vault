@@ -15,16 +15,17 @@ Each branch is intended to be a complete vault. Open the branch's working tree d
 ## Getting started
 
 1. Open this repository's root directory as an Obsidian vault.
-2. Read `AGENTS.md` and `Cheat Sheets/Quick Start.md`.
-3. Review `000 Workflows/000 Daily Workflow.md`.
-4. Create a daily note from `Templates/Daily Notes Template.md`.
-5. Commit useful checkpoints with Git when convenient.
+2. Read [Quick Start](Cheat%20Sheets/Quick%20Start.md). It is the only onboarding guide.
+3. Read the human-facing [Daily Rolling Guide](Cheat%20Sheets/Daily%20Rolling%20Guide.md).
+4. AI tools should follow the [Daily Workflow — AI Instructions](000%20Workflows/000%20Daily%20Workflow.md).
+5. Create a daily note from the [Daily Notes Template](Templates/Daily%20Notes%20Template.md).
+6. Commit useful checkpoints with Git when convenient.
 
 The vault can live in Dropbox or another synchronized folder for access from multiple devices. Git commits are still best made from a computer where Git is configured.
 
 ## AI tools
 
-`AGENTS.md` contains the portable vault guidance. `cursor.md` is a Cursor-specific adapter; other tools can use `AGENTS.md` or their own small adapter file. Do not replace a computer's host-level `AGENTS.md` with this file unless that is an intentional choice.
+`AGENTS.md` contains the portable vault guidance. `cursor.md` is a compatibility redirect for Cursor and does not add separate rules. Do not replace a computer's host-level `AGENTS.md` with this file unless that is an intentional choice.
 
 ## Updating a variation
 
