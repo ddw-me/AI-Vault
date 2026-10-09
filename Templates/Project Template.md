@@ -1,12 +1,17 @@
 <!-- Create this note in Active Projects when work needs more than one day's attention. Use only known information. Leave unknown fields blank. -->
 # Project: [Project Name]
 
-> **Usage note**: A project note is a draft until the user confirms its purpose, ownership, dates, and next actions. Do not invent missing details.
+> **Usage note**: A project note starts as `Draft` until its purpose, ownership, or next action is confirmed. Use the status definitions in [Project Workflow](../000%20Workflows/Project%20Workflow.md). A target date is optional; do not invent dates or treat proposed dates as commitments.
 
-**Status**: Draft | Active | Waiting | Complete | Cancelled **Start Date**: **Target Date**: **Last Updated**:
+**Status**: Draft
+**Start Date**:
+**Target Date**:
+**Last Updated**:
 
 ## Overview
-**Purpose**: **Completion Condition**: How will we know it is complete? **Stakeholders**: People involved or affected, if known
+**Purpose**:
+**Completion Condition**: How will we know it is complete?
+**Stakeholders**: People involved or affected, if known
 
 ## Current Status
 ### Next Actions

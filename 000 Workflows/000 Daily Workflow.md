@@ -23,6 +23,16 @@ Follow these rules when the user asks for a morning roll, daily plan, daily note
 - Commits, pushes, messages, publications, and other external actions require an explicit request.
 - Resolve the target date before choosing a daily-note file. An explicit date in the request wins; otherwise use the current local date.
 
+### Targeted note updates
+
+When the user names an existing note or date for an update, resolve and read that requested note first and use the same target throughout the task.
+
+- Change only the requested section and preserve the note's existing plan and unrelated content.
+- Do not turn a targeted update into a full morning roll or end-of-day cleanup.
+- Recommend related project or summary changes unless the user also authorizes those changes.
+- If the requested note cannot be resolved, stop and ask rather than silently creating a different note or rolling another date.
+- Run a full roll only when the user explicitly requests a roll or creation workflow.
+
 ## Date and time
 
 Before creating or rolling a dated note:
@@ -57,6 +67,8 @@ Missing context must reduce the information available to the AI, not stop the wo
 - If there is no weekly review, continue with projects, goals, and daily notes.
 - If there are no projects or goals, continue with the current request and daily notes.
 - If there is no previous daily note, start a new note without reconstructing work that is not available.
+- Missing daily notes are gaps in the record, not failures that must be repaired before the workflow can continue. When resuming, use today's note and the most recent useful earlier note.
+- Do not create backfilled notes unless the user asks for them. If backfilling is requested, use only information the user supplies or sources that can be verified, and label the note as backfilled.
 - Do not invent missing priorities. Mention missing context only when it materially affects the recommendation.
 
 ## Morning roll

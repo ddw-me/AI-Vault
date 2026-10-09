@@ -4,6 +4,8 @@ This vault is a practical note-taking and review system. It is meant to help you
 
 The approach is informed by Thomas A. Limoncelli's book [Time Management for System Administrators](https://www.oreilly.com/library/view/time-management-for/0596007833/), published by O'Reilly. The book is written for system administrators, but its central ideas apply to anyone who needs a reliable way to manage requests, tasks, interruptions, and longer-running work. This note summarizes those ideas and adapts them to this vault; it is not a replacement for the book.
 
+The immediate value of this system is practical: it helps you manage today's time, remember commitments, and keep tasks from disappearing. Its deeper value accumulates over time. The notes become durable context that you can search and review, and that an AI assistant with access to them can help curate, summarize, and use to guide you. The system is useful on the first day, but it becomes more valuable as the record develops.
+
 ## Why this belongs in the vault
 
 The vault is not just a place to store notes. It is an external memory and a lightweight operating system for personal work:
@@ -14,6 +16,8 @@ The vault is not just a place to store notes. It is an external memory and a lig
 - review unfinished work regularly so it is deliberately continued, rescheduled, delegated, or dropped.
 
 The system should reduce mental overhead, not become another project to maintain. Start with daily notes and add more structure only when it solves a real problem.
+
+For a worked example of how the notes, routines, Git, and optional AI assistance fit together, see [Time Management in Practice](./Time%20Management%20in%20Practice.md).
 
 ## Core principles
 

@@ -34,6 +34,8 @@ If the answer to the last question is yes, move the detail out of the home-level
 5. Review the result for credentials, tokens, private keys, confidential work information, private contact information, and unnecessary absolute paths.
 6. Record an owner and review date.
 
+The template's relative links assume that it remains in the vault's `Reference/` folder. If you copy the completed file outside the vault, rewrite retained vault references for the installed location using the actual vault path or a supported import mechanism. Check every retained reference from that installed location before relying on it.
+
 ## Ask an AI tool to help complete the template
 
 An AI tool can help gather the relevant host facts, identify missing sections, and propose a concise completed instruction set. Use plan mode or another read-only planning mode first. The AI should read this setup guide and the template before asking questions or proposing content.

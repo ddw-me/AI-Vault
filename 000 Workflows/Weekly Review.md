@@ -4,11 +4,12 @@ The weekly review turns daily capture into a short view of what moved, what is s
 
 ## Review contract
 
-- **Review period:** Monday through Sunday in the user's local time, unless an explicit date range is requested.
+- **Review period:** Monday through Sunday in the user's local time. If no period is specified, use the most recently completed week; an explicit date range wins.
 - **Sources:** Daily notes in the period, active projects, goals, and relevant waiting or delegated items. Use the monthly review when it exists, but do not require one.
 - **Output:** Create or update a note from [Weekly Summary Template](../Templates/Weekly%20Summary%20Template.md) in `Summaries/`.
 - **Evidence:** State which dates were reviewed. List missing daily notes when that affects the conclusion. Do not infer completion, trends, or metrics from missing evidence.
-- **Existing output:** Preserve personal reflections and accepted plans. Add or revise only what the review supports; do not overwrite a user's note with a fresh AI report.
+- **Existing output:** Search for an existing summary covering the requested period before creating one. Read and reuse it. If several summaries could be canonical, ask which one to use. Preserve personal reflections and accepted plans. Add or revise only what the review supports; do not overwrite a user's note with a fresh AI report.
+- **Naming:** Prefer `YYYY-MM-DD - Weekly Review.md`, using the Monday that starts the review week.
 - **Authority:** AI may summarize and recommend. The user decides what to carry into the next week.
 
 ## Manual review

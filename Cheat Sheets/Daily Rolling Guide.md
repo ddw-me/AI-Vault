@@ -14,7 +14,9 @@ The daily cycle has three parts:
 
 ## Morning
 
-Open the most recent previous note and the target day's calendar. If there is a gap, do not reconstruct the skipped days. If you use an AI assistant, ask it to follow the [AI daily workflow](../000%20Workflows/000%20Daily%20Workflow.md).
+Open today's daily note or create it from the configured template. Then open the most recent previous note and the target day's calendar. If there is a gap, do not reconstruct the skipped days. If you use an AI assistant, ask it to follow the [AI daily workflow](../000%20Workflows/000%20Daily%20Workflow.md).
+
+Review the most recent earlier note and copy only the next actions you choose to continue into today's note. Preserve the earlier note unchanged. Choose today's Daily Frog and priorities after reviewing the available context. Skipped days do not need daily notes.
 
 Review the AI's proposed carry-forwards and plan. You remain the person who decides what matters today. Accept, revise, or reject the proposed Daily Frog and priorities.
 
@@ -72,6 +74,12 @@ Useful prompts are collected in [AI Assistant Prompts](./AI%20Prompts.md). A typ
 > Good morning. Roll today's daily note using the AI Daily Workflow. Review the most recent previous note, available projects and planning context, carry forward relevant work, and propose a Daily Frog and priorities for my review.
 
 The AI may recommend a plan and, when explicitly asked to roll, update the daily note. It should show what it changed, what it proposed, what it could not resolve, and what context was missing.
+
+## If life interrupts
+
+You do not have to create a daily note every day. Illness, travel, emergencies, and busy days can create gaps. The notes do not lose their value because they are sparse, and a gap is not a reason to abandon the system.
+
+When you return, start with today's note and review the most recent useful earlier note. Carry forward only what still matters and deliberately replan, delegate, schedule, or drop the rest. Backfilling is optional. If you create a backfilled note, use only remembered or verified information and label it clearly; do not ask an AI assistant to invent what happened during the gap.
 
 ## Missing planning context
 

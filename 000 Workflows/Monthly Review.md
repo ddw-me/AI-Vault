@@ -9,7 +9,8 @@ The monthly review looks for longer arcs without pretending that a small vault h
 - **Missing context:** If there is no monthly plan, continue with the available weekly, project, goal, and daily notes. Do not invent objectives or treat a missing plan as a workflow failure.
 - **Output:** Create or update a note from [Monthly Summary Template](../Templates/Monthly%20Summary%20Template.md) in `Summaries/`.
 - **Evidence:** State which source notes were reviewed and identify gaps. Do not calculate completion rates, correlations, or other metrics unless the source supports them.
-- **Existing output:** Preserve the user's reflections and decisions. Do not replace an existing summary with an AI-generated report.
+- **Existing output:** Search for an existing summary covering the requested month before creating one. Read and reuse it. If several summaries could be canonical, ask which one to use. Preserve the user's reflections and decisions. Do not replace an existing summary with an AI-generated report.
+- **Naming:** Prefer `YYYY-MM - Monthly Review.md`.
 - **Authority:** AI may summarize and recommend. The user chooses next-month themes, goals, and system changes.
 
 ## Manual review

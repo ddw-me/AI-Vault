@@ -8,14 +8,16 @@ This repository is a small, generic, shareable Obsidian vault for daily notes, l
 
 It started from Mark Bakke's AI-native Obsidian workflow. The source material was adapted into a portable baseline rather than copied as a personal or company-specific system.
 
+The immediate value is practical: manage today's time, remember commitments, and keep tasks from disappearing. Over time, the notes become durable context that you can search and review, and that an AI assistant with access can help curate, summarize, and use to guide you. The system is useful on the first day, but becomes more valuable as the record develops. See [Time Management and Using This Vault](Cheat%20Sheets/Time%20Management%20and%20Using%20This%20Vault.md) and [Time Management in Practice](Cheat%20Sheets/Time%20Management%20in%20Practice.md) for the underlying approach and an example.
+
 ## Getting started
 
 1. Open this repository's root directory as an Obsidian vault.
 2. Read [Quick Start](Cheat%20Sheets/Quick%20Start.md). It is the only onboarding guide.
 3. Read the human-facing [Daily Rolling Guide](Cheat%20Sheets/Daily%20Rolling%20Guide.md).
-4. AI tools should follow the [Daily Workflow — AI Instructions](000%20Workflows/000%20Daily%20Workflow.md).
-5. Create a daily note from the [Daily Notes Template](Templates/Daily%20Notes%20Template.md).
-6. Commit useful checkpoints with Git when convenient.
+4. If you use AI, read `AGENTS.md` and follow the [Daily Workflow — AI Instructions](000%20Workflows/000%20Daily%20Workflow.md).
+5. If you want to start with daily notes, create one from the [Daily Notes Template](Templates/Daily%20Notes%20Template.md).
+6. Git is optional for basic use. When your notes are valuable enough to preserve, commit useful checkpoints; see the [Recovery Guide](Cheat%20Sheets/Recovery%20Guide.md).
 
 The repository includes optional Obsidian community plugins, but they are disabled by default. See [Obsidian Setup](Reference/Obsidian%20Setup.md) before enabling or removing them.
 
@@ -25,35 +27,10 @@ The vault can live in Dropbox or another synchronized folder for access from mul
 
 Unless otherwise noted, the original Markdown notes, templates, workflow documentation, and accompanying media are licensed under [CC BY-SA 4.0 International](LICENSE.md). Material adapted from Mark Bakke is attributed in [PROVENANCE](Reference/PROVENANCE.md). Third-party plugins, themes, trademarks, and other separately identified material remain under their respective licenses.
 
-## Branches and variations
+## Variations and publishing
 
-- `main` is the generic starter vault.
-- A variation branch can add folders and guidance for a specific use case without changing the baseline.
-- Future specialized branches can be created from `main` when needed.
-
-Each branch is intended to be a complete vault. Open the branch's working tree directly in Obsidian and archive it with Git when you want to share or distribute it. See [VARIATION](Reference/VARIATION.md) for the branch metadata convention.
+In the future, there may be other branches for specific use cases. Each branch is intended to be a complete vault. See [Vault Variation](Reference/VARIATION.md) for how to update a variation from `main`, archive a branch, and review provenance and licensing before sharing.
 
 ## AI tools
 
 `AGENTS.md` contains the portable vault guidance. `cursor.md` is a compatibility redirect for Cursor and does not add separate rules. Do not replace a computer's host-level `AGENTS.md` with this file unless that is an intentional choice.
-
-## Updating a variation
-
-Keep generic improvements on `main`. To bring them into a variation:
-
-```text
-git switch <variation>
-git merge main
-```
-
-Review the merge before publishing the variation. Keep branch-specific files and folders clearly separated from generic workflow files.
-
-## Publishing a branch
-
-From the repository root, archive a clean committed branch from its parent directory:
-
-```text
-git archive --format=tar.gz --prefix=shareable-vault/ --output=../<variation>.tar.gz <variation>
-```
-
-Before sharing an archive, check `Reference/VARIATION.md` and `Reference/PROVENANCE.md`, confirm source attribution and licensing for adapted material, remove private material, and verify that the branch contains no credentials, company-specific notes, or personal history. Git archives include committed files only, so review `git status` and the archive contents before distributing it.

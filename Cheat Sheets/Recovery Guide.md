@@ -2,6 +2,53 @@
 
 This guide covers ordinary recovery for a Git-backed Obsidian vault. Make a copy of the vault before attempting unfamiliar recovery. Do not use destructive Git commands just because a command looks faster.
 
+## Recovering an archived vault
+
+An extracted archive does not contain Git history. Preserve the original extracted folder before experimenting, and open a saved copy in a separate folder when comparing or recovering notes.
+
+### Without Git
+
+1. Keep the original vault folder unchanged.
+2. Make a copy of the vault or restore the backup into a separate folder.
+3. Compare the affected notes and attachments side by side.
+4. Copy only the selected content back into the working vault.
+5. Open the changed notes in Obsidian and check their links before continuing.
+
+### Optional Git setup
+
+Git is optional for an archive recipient. If you want local checkpoints and history, initialize a repository after reviewing the extracted vault:
+
+```text
+cd /path/to/vault
+git init
+git status
+git add -- path/to/selected/files
+git diff --cached --check
+git commit -m "Initial vault checkpoint"
+```
+
+Review staged files before the first commit and do not add credentials, private keys, or other sensitive material. Configure a remote only if you understand where the vault will be stored and who can access it.
+
+## Using a remote repository
+
+After creating local commits, you can connect the vault to a remote Git repository so its history and notes have an off-device copy. GitHub supports private repositories that are accessible only to you and people you explicitly share them with; see GitHub's [about repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories) and [repository access guidance](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration). GitLab is another option: its projects can be private, with access limited to project members; see [GitLab project and group visibility](https://docs.gitlab.com/user/public_access/).
+
+Before pushing a vault, review the files and history for credentials, private keys, personal information, and notes you do not want stored with that provider. A private repository is access-controlled, not automatically encrypted or risk-free. Enable strong account protection, share access deliberately, and confirm the provider's storage and retention terms.
+
+The remote repository provides an off-device copy, while local commits provide convenient checkpoints and history. They solve related but different recovery problems. After creating a private remote, add it as `origin` and push committed changes; see the provider's Git instructions if you need help creating the remote or configuring authentication.
+
+Once `origin` is configured, a simple working cycle is:
+
+```text
+git pull --ff-only
+git add -- path/to/changed/files
+git diff --cached --check
+git commit -m "Checkpoint notes"
+git push
+```
+
+Pull before starting work so you have the latest remote changes. Commit related local changes as a checkpoint, then push the commit so the remote has the same recovery point. If `git pull --ff-only` or `git push` reports a conflict or other error, stop and inspect the state before trying a different command.
+
 ## Check what changed
 
 From the vault root:

@@ -24,7 +24,13 @@ Review the most recent previous daily note and available planning context. Sugge
 ```
 Close out today's daily note using the AI Daily Workflow. Review completed work and every open item, propose a disposition for each item, and leave a useful starting point for tomorrow. Show me the proposed changes first unless I explicitly ask you to update the note.
 ```
-**Result**: Records outcomes, identifies unresolved work, and prepares deliberate carry-forwards
+**Result**: Proposes outcome records, identifies unresolved work, and prepares deliberate carry-forwards. The note is changed only when the user authorizes the update.
+
+### Targeted Daily Note Update
+```
+Update the named daily note [date or note path] using the AI Daily Workflow. Read that target note first and change only [requested section or change]. Preserve its existing plan and unrelated content. Do not roll another date or perform a full daily cleanup. Recommend related project or summary changes, but do not make them unless I authorize them.
+```
+**Result**: Makes a bounded update to the requested note or reports why the target cannot be resolved
 
 ### Planning and Prioritization
 ```
@@ -62,13 +68,9 @@ Draft a brief stakeholder update for [project/initiative] based on this week's p
 
 ### Weekly Review
 ```
-Please analyze this week's daily notes and draft a weekly summary focusing on:
-- Key accomplishments and strategic progress
-- Patterns in productivity and energy
-- Persistent tasks that need escalation
-- Opportunities for process improvement
+Follow the [Weekly Review Workflow]. Review the requested Monday-through-Sunday period, or the most recently completed week if I do not specify a range. State which daily notes, active projects, goals, waiting items, and existing summaries you reviewed. Distinguish missing sources from sources unavailable to you. Summarize accomplishments, open commitments, recurring friction, decisions, and learning without inventing facts or metrics. Recommend a small set of possible next-week priorities, clearly labeled as recommendations. Search for and reuse an existing summary for the period before proposing a new one. Do not create or overwrite a summary until I approve it.
 ```
-**Result**: Comprehensive weekly analysis with insights and recommendations
+**Result**: An evidence-limited weekly draft with source coverage, missing context, open commitments, and clearly labeled recommendations
 
 ### Pattern Analysis
 ```

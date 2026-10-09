@@ -4,6 +4,8 @@ Use this as a starting point for the host-specific agent instructions that accom
 
 The vault instructions describe how the vault works. A completed copy of this file describes one computer's role, tools, paths, repositories, and local safety boundaries. Create a separate completed version for each computer when those details differ.
 
+The relative links in this template assume that the completed file remains in the vault's `Reference/` folder. If you install it somewhere else, rewrite the retained vault references for that location or use the AI tool's supported import mechanism.
+
 ## How to use this template
 
 - Copy this file to a private location for the target computer.
