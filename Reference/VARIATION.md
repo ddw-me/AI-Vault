@@ -11,12 +11,17 @@
 
 This branch is the stable, generic starting point for complete vault variations. It should remain small enough to understand and useful without personal history, company context, or specialized tooling.
 
+## Release identity
+
+The root `VERSION` file identifies the current starter snapshot. The root `CHANGELOG.md` summarizes notable changes in published snapshots. These files describe release history; they do not promise an automatic upgrade path for a vault that has been customized.
+
 ## Changes from the source
 
 - Flattened the vault contents to the repository root so the repository is directly usable as an Obsidian vault.
 - Kept daily, weekly, and monthly review ideas, templates, lightweight agents, and Git guidance.
 - Removed personal/company context and bookmark-management automation.
 - Added portable `AGENTS.md` guidance and branch/publishing documentation.
+- See the [changelog](../CHANGELOG.md) for the history of published starter snapshots.
 - Kept optional community plugins in the edition but disabled them by default; see [Obsidian Setup](Obsidian%20Setup.md).
 
 ## Branch model

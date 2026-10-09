@@ -27,7 +27,7 @@ Unless otherwise noted, the original Markdown notes, templates, workflow documen
 
 ## Variations and publishing
 
-This is a customizable starter vault, not a package with an automatic upgrade path. Once you begin using it, your notes, rules, templates, and folders may diverge substantially. Treat tagged releases as starting snapshots and review future changes selectively rather than replacing or automatically merging them into an active vault.
+This is a customizable starter vault, not a package with an automatic upgrade path. Once you begin using it, your notes, rules, templates, and folders may diverge substantially. Treat tagged releases as starting snapshots and review future changes selectively rather than replacing or automatically merging them into an active vault. See the [Changelog](CHANGELOG.md) for the published snapshot history.
 
 In the future, there may be other branches for specific use cases. Each branch is intended to be a complete vault. See [Vault Variation](Reference/VARIATION.md) for how to update a variation from `main`, archive a branch, and review provenance and licensing before sharing.
 
