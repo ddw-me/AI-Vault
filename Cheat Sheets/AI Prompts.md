@@ -82,7 +82,7 @@ Analyze my [time period] notes for patterns in [specific area: productivity, ene
 ```
 Operations agent: Review my recent notes and identify the biggest friction points in my workflow. What can we systematically eliminate?
 ```
-**Result**: Specific recommendations for process improvements and automation opportunities
+**Result**: Specific, low-cost recommendations for reducing process friction, with automation considered only when the pattern recurs
 
 ## Planning and Strategy
 

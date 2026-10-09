@@ -30,6 +30,7 @@ These are the principles behind the workflow:
 5. **Work in manageable pieces.** Break vague or oversized tasks into a next action that fits the available time and energy.
 6. **Make unfinished work explicit.** At the end of a day or review period, every open item should have a deliberate disposition. It should not simply vanish from view.
 7. **Keep the system visible and adaptable.** The vault should help a person see what is happening and what needs attention. Simplify it when the structure creates more work than value.
+8. **Reduce friction over time.** When work is repeatedly difficult to start, resume, or complete, improve the path rather than relying only on more effort. Clarify the next action, make the task smaller, create a reusable template, remove an unnecessary step, delegate it, or automate it when the pattern recurs.
 
 ## Delegate, Record, or Do
 
@@ -87,6 +88,12 @@ The book's cycle is a repeatable loop for turning commitments into completed wor
 The Daily Frog is a memorable name for the most important useful action for the day. It is not a demand to finish an entire project, and it is not a measure of personal worth. Choose a concrete next step that would make the day meaningfully better if completed.
 
 If the Frog keeps carrying forward, treat that as information. The item may be too large, poorly defined, blocked, lower priority than it appeared, or no longer necessary. Break it down, change the plan, or deliberately remove it.
+
+## Use friction as information
+
+The goal is not perfect compliance with the workflow. It is to make useful work easier to start, resume, and complete. When a task keeps being postponed or a note repeatedly takes too much effort to maintain, ask what is creating the resistance. The problem may be an unclear next action, too much scope, missing information, a repeated manual step, or a commitment that no longer matters.
+
+Choose the smallest useful improvement. Clarify the next action, split the task, add a template, change where the information is recorded, remove an unnecessary step, or delegate the work. If the same friction recurs, consider a more durable process change or automation. A delay is information about the system or the situation, not a reason to shame yourself.
 
 ## A lightweight daily routine
 

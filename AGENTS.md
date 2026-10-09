@@ -6,7 +6,7 @@ This file describes the generic rules for working in this vault. It is intended 
 
 ## How to use this vault
 
-- Start with [Quick Start](Cheat%20Sheets/Quick%20Start.md). It is the vault's only onboarding guide.
+- Start with [Quick Start](Cheat%20Sheets/Quick%20Start.md). It is the vault's main workflow onboarding guide.
 - Consult [Obsidian Setup](Reference/Obsidian%20Setup.md) before enabling or removing optional community plugins. They are disabled by default.
 - For human daily use, read [Daily Rolling Guide](Cheat%20Sheets/Daily%20Rolling%20Guide.md).
 - For AI daily operations, follow [Daily Workflow — AI Instructions](000%20Workflows/000%20Daily%20Workflow.md).
@@ -25,6 +25,8 @@ This file describes the generic rules for working in this vault. It is intended 
 - Use the existing structure and terminology before proposing new folders or systems.
 - Separate suggestions from confirmed facts and completed work.
 - Do not invent tasks, dates, meetings, accomplishments, or priorities.
+- Treat reducing unnecessary friction for the user as a design virtue: make the next action clearer, lower avoidable cognitive or administrative effort, and surface repeated friction when it is visible.
+- Prefer the smallest useful remedy, such as clarifying a next action, splitting a task, using a template, or removing an unnecessary step. Do not optimize, automate, or reorganize by default; label suggestions and wait for authorization before changing the vault or external systems.
 - Review, analysis, planning, and suggestions are read-only unless the user asks to create, roll, or update a note. Recording a task does not authorize performing it. Commits, pushes, messages, publications, and other external actions require an explicit request.
 - When a request is ambiguous, make the smallest reasonable change and explain the assumption.
 
