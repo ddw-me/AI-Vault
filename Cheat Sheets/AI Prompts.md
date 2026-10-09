@@ -36,7 +36,7 @@ Update the named daily note [date or note path] using the AI Daily Workflow. Rea
 ```
 Help me plan my day. Review my known commitments, priorities, available time, and any relevant context. Suggest a realistic sequence and explain the tradeoffs; do not decide my priorities for me or change my notes.
 ```
-**Result**: Analyzes tasks and suggests optimal ordering based on difficulty and energy levels
+**Result**: Analyzes tasks and suggests a realistic ordering based on the available context, difficulty, and energy levels
 
 ### Task Analysis
 ```
@@ -76,7 +76,7 @@ Follow the [Weekly Review Workflow]. Review the requested Monday-through-Sunday 
 ```
 Analyze my [time period] notes for patterns in [specific area: productivity, energy, decision-making, etc.]. Distinguish observed evidence from interpretation, and do not invent metrics from missing notes.
 ```
-**Result**: Data-driven insights about trends and optimization opportunities
+**Result**: Evidence-based observations about trends and possible areas for improvement, with uncertainty called out
 
 ### Friction Point Analysis
 ```
@@ -93,8 +93,10 @@ Based on the past month's daily notes and summaries, help me:
 - Create next month's strategic focus areas
 - Optimize my workflow based on observed patterns
 - Set realistic goals aligned with larger objectives
+
+Use only supported facts and distinguish observations from interpretations and recommendations. Do not invent missing objectives, metrics, deadlines, or outcomes. Do not create or update notes until I approve the proposed plan.
 ```
-**Result**: Strategic planning support with data-driven recommendations
+**Result**: Evidence-limited planning support with clearly labeled recommendations
 
 ### Project Creation and Planning
 
@@ -117,19 +119,19 @@ Help me break down [project name] into actionable steps. Separate known commitme
 
 ### Goal Setting
 ```
-Based on my recent performance patterns and strategic objectives, help me set realistic [weekly/monthly/quarterly] goals.
+Based on the information I provide and any supported context in the vault, help me draft realistic [weekly/monthly/quarterly] goals. Separate known objectives from proposed goals, dates, measures, and assumptions. Do not invent missing priorities or update notes unless I authorize it.
 ```
-**Result**: SMART goals aligned with capacity and strategic direction
+**Result**: Clearly labeled goal proposals aligned with supported context
 
 ## Agent-Specific Prompts
 
 ### Historian Agent
 ```
-Historian: What patterns do you see in my task completion over the last [time period]? What factors correlate with my highest productivity?
+Historian: What patterns are actually supported by my notes over the last [time period]? Distinguish observations from interpretations and hypotheses. Do not calculate completion rates, correlations, or other metrics unless the source supports them.
 ```
 
 ```
-Historian: Generate a summary of my key achievements this [week/month] for my performance review.
+Historian: Generate a summary of my key achievements this [week/month] for my performance review. Use only supported evidence, identify missing context, and do not invent metrics or outcomes.
 ```
 
 ### Curator Agent
@@ -143,7 +145,7 @@ Curator: What information am I capturing repeatedly that should be systematized 
 
 ### Scheduler Agent
 ```
-Scheduler: Based on my energy patterns, what's the optimal schedule for tomorrow's tasks?
+Scheduler: Based on my stated commitments, constraints, and any observed energy patterns, suggest a realistic schedule for tomorrow's tasks. Label assumptions and recommendations; do not change my notes.
 ```
 
 ```
@@ -161,11 +163,11 @@ Operations: How can I simplify or streamline the processes I do most frequently?
 
 ### CFO Agent (Business Focus)
 ```
-CFO: What activities this month had the highest ROI in terms of business impact? What should I do more/less of?
+CFO: Based on documented effort and outcomes this month, what activities appear to have had the most useful impact? Distinguish evidence from assumptions, do not invent ROI or financial metrics, and suggest what I might do more or less of.
 ```
 
 ```
-CFO: Based on my time allocation, what strategic adjustments would maximize value creation?
+CFO: Based on documented time allocation, commitments, and outcomes, what strategic adjustments could I consider? Label recommendations and missing information; do not claim to have measured value that the notes do not support.
 ```
 
 ### Publisher Agent (Content/Communication)
@@ -186,7 +188,7 @@ Compare my workflow from [earlier period] to now. What improvements have worked,
 
 ### Energy Optimization
 ```
-Analyze my energy patterns and task completion rates. How can I better align challenging work with my peak energy periods?
+Analyze the energy observations and task context in my notes. How might I better align challenging work with periods that appear more suitable? Distinguish evidence from interpretation and do not infer task completion rates or causal relationships that the notes do not support.
 ```
 
 ### Decision Quality Review

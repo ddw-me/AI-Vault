@@ -8,29 +8,11 @@ This is the only onboarding guide for the vault. Start small: daily notes are en
 2. If you received an archive, extract it first. In Obsidian, choose **Open folder as vault** and select the folder containing `README.md`. Do not open one of its subdirectories as the vault.
 3. Read [AGENTS.md](../AGENTS.md) for the portable rules.
 
-## Optional: Sync and recovery
+## 2. Verify Daily Notes
 
-### Synchronization and mobile capture
+The vault ships with Daily Notes and Templates settings. Open the relevant Obsidian settings and verify that daily notes use `Daily Notes/`, the standard template is `Templates/Daily Notes Template.md`, and templates are stored in `Templates/`. Change these settings only if you want a different layout.
 
-The vault may live in Dropbox or another synchronized folder for access from multiple computers. Set it up and test it on one computer first. Mobile syncing has platform-specific limitations; consult Obsidian's [sync guide](https://obsidian.md/help/sync-notes) or use Obsidian Sync before relying on Dropbox for mobile access.
-
-A phone or tablet can make the vault useful for capturing a quick idea, reminder, or task while you are away from your computer. Keep mobile capture simple: add a short item to today's daily note or another temporary capture note, then do more structured organization later on a computer.
-
-Some people use a separate quick-capture app such as Google Keep when opening the vault is inconvenient. That can work as a temporary inbox, but it creates another place to check. Transfer useful captures into the vault when you return to your computer; keep the vault as the durable record.
-
-Synchronization and Git provide different things: synchronization provides access, while Git provides history and recovery. Read the [Recovery Guide](./Recovery%20Guide.md) before relying on either system as a backup. If you do not use Git, make periodic copies or archives of the entire vault and test that a copy can be opened before relying on it as a backup.
-
-### Git and recovery
-
-Git is optional for getting started, but it becomes increasingly valuable as the vault accumulates useful notes. Commit related files whenever you reach a meaningful checkpoint. Some people commit several times during the day. When starting out, committing the useful work from a whole day is also fine.
-
-The important habit is to commit regularly enough that you have a recent point to return to if you make a mistake. Commit before making a major reorganization, bulk edit, or workflow change. Review the changed files and staged diff before committing.
-
-A local commit provides history and recovery. Push or copy the repository elsewhere if you also want protection from computer loss or disk failure. A private GitHub repository is one option for personal notes, provided you are comfortable storing them there and configure access carefully. See the [Recovery Guide](./Recovery%20Guide.md) for practical commands.
-
-## 2. Configure Daily Notes
-
-In Obsidian, open Settings and configure Daily notes:
+In Obsidian, open Settings and review Daily notes:
 
 - **New file location:** `Daily Notes`
 - **Template file location:** `Templates/Daily Notes Template.md`
@@ -83,11 +65,32 @@ During the first week, focus on capturing and reviewing. After that, add only th
 - use the [Project Workflow](../000%20Workflows/Project%20Workflow.md) to keep its status and completion condition clear;
 - use the [Weekly Review](../000%20Workflows/Weekly%20Review.md) to see what is drifting and plan the next week;
 - use the [Monthly Review](../000%20Workflows/Monthly%20Review.md) to look at longer arcs and adjust the system;
+- create a goal note from the [Goal Template](../Templates/Goal%20Template.md) when you need to track a longer-term objective;
 - use Git for checkpoints when the notes are valuable enough to preserve.
 
 The optional plugins included with this vault are described in [Obsidian Setup](../Reference/Obsidian%20Setup.md). They are disabled by default; enable only what you want.
 
-## Optional AI assistance
+## Optional extensions
+
+### A. Synchronization and mobile capture
+
+The vault may live in Dropbox or another synchronized folder for access from multiple computers. Set it up and test it on one computer first. Mobile syncing has platform-specific limitations; consult Obsidian's [sync guide](https://obsidian.md/help/sync-notes) or use Obsidian Sync before relying on Dropbox for mobile access.
+
+A phone or tablet can make the vault useful for capturing a quick idea, reminder, or task while you are away from your computer. Keep mobile capture simple: add a short item to today's daily note or another temporary capture note, then do more structured organization later on a computer.
+
+Some people use a separate quick-capture app such as Google Keep when opening the vault is inconvenient. That can work as a temporary inbox, but it creates another place to check. Transfer useful captures into the vault when you return to your computer; keep the vault as the durable record.
+
+Synchronization and Git provide different things: synchronization provides access, while Git provides history and recovery. Read the [Recovery Guide](./Recovery%20Guide.md) before relying on either system as a backup. If you do not use Git, make periodic copies or archives of the entire vault and test that a copy can be opened before relying on it as a backup.
+
+### B. Git and recovery
+
+Git is optional for getting started, but it becomes increasingly valuable as the vault accumulates useful notes. Commit related files whenever you reach a meaningful checkpoint. Some people commit several times during the day. When starting out, committing the useful work from a whole day is also fine.
+
+The important habit is to commit regularly enough that you have a recent point to return to if you make a mistake. Commit before making a major reorganization, bulk edit, or workflow change. Review the changed files and staged diff before committing.
+
+A local commit provides history and recovery. Push or copy the repository elsewhere if you also want protection from computer loss or disk failure. A private GitHub repository is one option for personal notes, provided you are comfortable storing them there and configure access carefully. See the [Recovery Guide](./Recovery%20Guide.md) for practical commands.
+
+### C. AI assistance
 
 AI is optional, but recommended. It can help analyze notes, suggest smaller next actions, or prepare a review, but it should not silently invent tasks or decide what you value. Useful starting prompts include:
 
@@ -99,7 +102,7 @@ For more bounded examples, see [AI Prompts](./AI%20Prompts.md).
 
 For a first AI interaction, if the assistant has file access, ask it to read `AGENTS.md` and the relevant workflow before working and to identify which notes it can access. If it does not have file access, provide the relevant instructions and selected notes yourself. Ask for a draft or recommendation first; a response in chat does not mean that a note was saved.
 
-## Optional: add personal context
+### D. Personal context and host setup
 
 If you want AI assistance to reflect your background and working preferences, fill in [About Me](../Reference/About%20Me.md). This is optional: leave the template blank if you do not want to provide personal context. Do not put passwords, credentials, private keys, or other secrets in it.
 

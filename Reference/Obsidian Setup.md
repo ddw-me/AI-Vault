@@ -1,16 +1,32 @@
 # Obsidian Setup
 
-This vault includes a small set of optional community plugins. They are installed in the repository so the vault can be shared as a complete edition, but community plugins are disabled by default in this baseline. Enable only the ones you understand and want to use.
+This note explains how to install Obsidian, open this vault, verify its shipped settings, and decide whether to enable optional features. If you are new to Obsidian, start here before following the [Quick Start](../Cheat%20Sheets/Quick%20Start.md).
 
-## Core Obsidian features
+## Install Obsidian and open the vault
 
-The vault uses Obsidian's built-in Daily Notes and Templates features. The repository includes portable settings for:
+1. Download Obsidian from the official [Obsidian download page](https://obsidian.md/download) and install it for your computer or device.
+2. Obtain this vault by cloning the repository or downloading an archive. If you received an archive, extract it before opening it.
+3. In Obsidian, choose **Open folder as vault** and select the folder containing `README.md`. Do not open one of its subdirectories as the vault.
+4. If you are viewing the repository on GitHub, the Markdown files and their relative links can also be read directly there. Opening the folder in Obsidian is required for editing and using the vault as a working system.
+
+Obsidian stores the vault's notes as ordinary Markdown files alongside its local configuration. This makes the notes portable and lets you use Git or another backup method, but it also means that synchronized copies should be set up and tested carefully.
+
+## First-run checks
+
+This vault uses Obsidian's built-in Daily Notes and Templates features. After opening it, verify that these settings are present and adjust them only if you want a different layout:
 
 - daily notes in `Daily Notes/`;
 - the standard template in `Templates/Daily Notes Template.md`;
-- templates in `Templates/`.
+- templates in `Templates/`;
+- relative Markdown links with Wikilinks disabled.
 
-You can change these settings for your own workflow without changing the note structure.
+See the official [Obsidian Help](https://help.obsidian.md/) for current instructions when menu names or settings differ between versions.
+
+## Theme and optional plugins
+
+The vault includes the Border theme as its default appearance. If you prefer Obsidian's standard appearance, open **Settings → Appearance → Themes** and select **Default**.
+
+The repository includes optional community plugins, but they are disabled by default in this baseline. When Obsidian warns that the vault contains community plugins or asks whether to trust them, declining is safe: the core workflow does not require any community plugin. Enable only the plugins you understand and want to use.
 
 ## Included optional plugins
 

@@ -19,7 +19,8 @@ The monthly review looks for longer arcs without pretending that a small vault h
 2. Review active projects and goals for meaningful movement or drift.
 3. Identify accomplishments, unresolved commitments, repeated friction, and useful learning.
 4. Choose one or two themes or priorities for the next month.
-5. Record concrete changes in the relevant project, goal, or workflow note.
+5. If a longer-term objective needs a durable record, create a note in `Goals/` from [Goal Template](../Templates/Goal%20Template.md); goals are optional.
+6. Record concrete changes in the relevant project, goal, or workflow note.
 
 ## AI-assisted review
 

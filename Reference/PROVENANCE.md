@@ -4,7 +4,7 @@ This vault includes material adapted from an AI-native workflow created by Mark 
 
 Before publishing or redistributing an archive:
 
-- provide any attribution required by that permission or license;
+- preserve the attribution and license information required for adapted material;
 - remove personal, company-specific, credential, and private note content;
 - review the branch's `VARIATION.md` and the committed file list;
 - verify the archive can be opened as an Obsidian vault.

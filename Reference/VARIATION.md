@@ -49,7 +49,7 @@ This section is for users who are comfortable with Git. Beginners can use a chec
 From the repository root, archive a clean committed branch from its parent directory:
 
 ```text
-git archive --format=tar.gz --prefix=shareable-vault/ --output=../<variation>.tar.gz <variation>
+git archive --format=tar.gz --prefix=durable-context/ --output=../<variation>.tar.gz <variation>
 ```
 
 Before sharing an archive, check `Reference/VARIATION.md` and `Reference/PROVENANCE.md`, confirm source attribution and licensing for adapted material, remove private material, and verify that the branch contains no credentials, company-specific notes, or personal history. Git archives include committed files only, so review `git status` and the archive contents before distributing it.

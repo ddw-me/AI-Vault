@@ -29,7 +29,7 @@ When the user names an existing note or date for an update, resolve and read tha
 
 - Change only the requested section and preserve the note's existing plan and unrelated content.
 - Do not turn a targeted update into a full morning roll or end-of-day cleanup.
-- Recommend related project or summary changes unless the user also authorizes those changes.
+- Recommend related project or summary changes, but do not make them unless the user authorizes those changes.
 - If the requested note cannot be resolved, stop and ask rather than silently creating a different note or rolling another date.
 - Run a full roll only when the user explicitly requests a roll or creation workflow.
 

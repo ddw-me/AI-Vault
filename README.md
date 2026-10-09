@@ -12,12 +12,10 @@ The immediate value is practical: manage today's time, remember commitments, and
 
 ## Getting started
 
-1. Open this repository's root directory as an Obsidian vault.
-2. Read [Quick Start](Cheat%20Sheets/Quick%20Start.md). It is the only onboarding guide.
-3. Read the human-facing [Daily Rolling Guide](Cheat%20Sheets/Daily%20Rolling%20Guide.md).
+1. If you are viewing this on GitHub, use the repository's **Code** menu to clone it or download an archive. If you received an archive, extract it first.
+2. Read [Obsidian Setup](Reference/Obsidian%20Setup.md) to install Obsidian and open the repository root as a vault.
+3. Read [Quick Start](Cheat%20Sheets/Quick%20Start.md). It is the main workflow onboarding guide.
 4. If you use AI, read `AGENTS.md` and follow the [Daily Workflow — AI Instructions](000%20Workflows/000%20Daily%20Workflow.md).
-5. If you want to start with daily notes, create one from the [Daily Notes Template](Templates/Daily%20Notes%20Template.md).
-6. Git is optional for basic use. When your notes are valuable enough to preserve, commit useful checkpoints; see the [Recovery Guide](Cheat%20Sheets/Recovery%20Guide.md).
 
 The repository includes optional Obsidian community plugins, but they are disabled by default. See [Obsidian Setup](Reference/Obsidian%20Setup.md) before enabling or removing them.
 
@@ -34,3 +32,5 @@ In the future, there may be other branches for specific use cases. Each branch i
 ## AI tools
 
 `AGENTS.md` contains the portable vault guidance. `cursor.md` is a compatibility redirect for Cursor and does not add separate rules. Do not replace a computer's host-level `AGENTS.md` with this file unless that is an intentional choice.
+
+> Note: The GitHub repository is named `AI-Vault`; the user-facing vault and workflow are called Durable Context.
