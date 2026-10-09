@@ -35,6 +35,6 @@ Use one current status at a time. A proposed date, milestone, or estimate is not
 
 Before changing a project to `Complete`, check its completion condition and record the result. Before changing it to `Cancelled`, record what was decided and why when that context may matter later.
 
-After a project is complete or cancelled, create `Active Projects/Archive/` if needed and move the note there when the active folder should remain focused on current work. Preserve links and history. If the project is still useful as reference material, keep the note or add a link from the relevant reference note.
+After a project is complete or cancelled, create `Active Projects/Archive/` if needed and move the note there when the active folder should remain focused on current work. If you use Obsidian, move the note from within Obsidian with automatic internal-link updating enabled in **Settings → Files and Links**. Then check incoming links, relative outgoing links, and attachments. Preserve links and history. If the project is still useful as reference material, keep the note or add a link from the relevant reference note.
 
 Archiving is a filing decision, not deletion. Do not delete the project note merely because the work is finished.

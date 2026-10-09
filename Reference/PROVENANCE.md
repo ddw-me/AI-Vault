@@ -7,6 +7,7 @@ Before publishing or redistributing an archive:
 - preserve the attribution and license information required for adapted material;
 - remove personal, company-specific, credential, and private note content;
 - review the branch's `VARIATION.md` and the committed file list;
+- preserve the bundled plugin and theme notices in [Third-Party Notices](THIRD-PARTY-NOTICES.md);
 - verify the archive can be opened as an Obsidian vault.
 
 Unless otherwise noted, the original Markdown notes, templates, workflow documentation, and accompanying media in this vault are licensed under CC BY-SA 4.0 International. Material adapted from Mark Bakke is included under that license with attribution. Third-party plugins, themes, trademarks, and other separately identified material remain under their respective licenses.

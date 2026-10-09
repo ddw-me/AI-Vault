@@ -89,6 +89,8 @@ Read the most recent existing daily note before the target date completely befor
 
 Do not rely only on unchecked checkboxes. Important work may be recorded as plain text, a follow-up, a decision, or an instruction.
 
+When an authorized roll reads a source note containing still-pending content under `AI Assistant Notes > User Instructions for Next AI Session`, carry that instruction into the target note's existing instruction section when it still applies. Preserve its conditions, avoid duplicates, and do not execute it unless the current request authorizes the relevant work. A read-only review should surface pending instructions in its result; copying them into a note requires explicit authorization to update that note. Workflows that read a defined set of daily notes, such as a weekly review, should apply the same rule within that source set rather than scanning the entire vault.
+
 ### 2. Classify every open item
 
 For each item that may continue into today, assign one disposition:
@@ -97,7 +99,7 @@ For each item that may continue into today, assign one disposition:
 - **Carry forward:** still relevant and has a clear next action.
 - **Move to project:** needs multiple steps or will span several days.
 - **Delegate / Waiting:** another person or external event owns the next step.
-- **Schedule:** belongs on a later date or depends on a fixed commitment.
+- **Schedule:** put the action into a calendar or reminder, or retain it in a regularly reviewed project or waiting list with a follow-up or review date. A date written only in an old daily note is not enough.
 - **Drop:** no longer needed, duplicated, or deliberately abandoned.
 - **Needs decision:** the available context is insufficient; surface it to the user rather than guessing.
 
@@ -137,6 +139,7 @@ Before reporting completion, check that:
 
 - the target note has the correct date and template structure;
 - every relevant open item has a visible disposition;
+- scheduled items have a calendar, reminder, project, or waiting-list location where they will resurface;
 - Quick Wins and Waiting / Delegated items were not silently lost;
 - user instructions were not mistaken for ordinary tasks;
 - proposed priorities fit known commitments and available time;
@@ -146,14 +149,17 @@ Report the note created or updated, the proposed Daily Frog and priorities, item
 
 ## During-day support
 
-When the user asks to capture or process something during the day:
+When the user asks to capture or process something during the day, treat “process” as analysis or a recommendation by default. Do not change notes merely because the user asked the AI to process information.
 
-- add requests, decisions, observations, and outcomes to today's note;
+When the user explicitly asks to capture or update a note:
+
+- add requests, decisions, observations, and outcomes to the resolved target note;
 - use **Delegate, Record, or Do** for new work;
 - record the owner and follow-up when work is delegated or waiting;
-- move multi-step work to `Active Projects/` when appropriate, preserving a pointer in the daily note;
 - keep AI suggestions visibly separate from confirmed user decisions;
 - do not turn a casual observation into a task without the user's intent.
+
+If multi-step work appears to belong in `Active Projects/`, recommend the move and preserve a pointer in the daily note. Perform the move only when the user explicitly authorizes that update.
 
 Treat only explicit content under `AI Assistant Notes > User Instructions for Next AI Session` as instructions to process during the next relevant AI interaction. Treat `AI Recommendations` as advisory context, not as user instructions. Preserve explicit user instructions until they are handled or the user explicitly removes them.
 
@@ -163,7 +169,7 @@ When the user asks to close out the day or prepare tomorrow:
 
 1. Review today's note and identify completed work, partial progress, and open items.
 2. Record meaningful outcomes rather than only marking checkboxes.
-3. Give every open item a disposition: carry forward with a next action, move to a project, delegate, wait, schedule, drop, or ask for a decision.
+3. Give every open item a disposition: carry forward with a next action, move to a project, delegate, wait, schedule it in a calendar or reminder, retain it in a reviewed project or waiting list, drop, or ask for a decision.
 4. Prepare a short starting point for tomorrow.
 5. Do not claim that an item is complete merely because it was discussed.
 

@@ -13,9 +13,9 @@ The immediate value is practical: manage today's time, remember commitments, and
 ## Getting started
 
 1. If you are viewing this on GitHub, use the repository's **Code** menu to clone it or download an archive. If you received an archive, extract it first.
-2. Read [Obsidian Setup](Reference/Obsidian%20Setup.md) to install Obsidian and open the repository root as a vault.
-3. Read [Quick Start](Cheat%20Sheets/Quick%20Start.md). It is the main workflow onboarding guide.
-4. If you use AI, read `AGENTS.md` and follow the [Daily Workflow — AI Instructions](000%20Workflows/000%20Daily%20Workflow.md).
+2. Read [Quick Start](Cheat%20Sheets/Quick%20Start.md). It is the main workflow onboarding guide.
+3. Use [Obsidian Setup](Reference/Obsidian%20Setup.md) for detailed installation, settings, theme, and optional-plugin guidance.
+4. Before opening the vault in an AI-enabled editor or connecting an AI assistant, read `AGENTS.md` and follow the [Daily Workflow — AI Instructions](000%20Workflows/000%20Daily%20Workflow.md).
 
 The repository includes optional Obsidian community plugins, but they are disabled by default. See [Obsidian Setup](Reference/Obsidian%20Setup.md) before enabling or removing them.
 
@@ -23,7 +23,7 @@ The vault can live in Dropbox or another synchronized folder for access from mul
 
 ## License
 
-Unless otherwise noted, the original Markdown notes, templates, workflow documentation, and accompanying media are licensed under [CC BY-SA 4.0 International](LICENSE.md). Material adapted from Mark Bakke is attributed in [PROVENANCE](Reference/PROVENANCE.md). Third-party plugins, themes, trademarks, and other separately identified material remain under their respective licenses.
+Unless otherwise noted, the original Markdown notes, templates, workflow documentation, and accompanying media are licensed under [CC BY-SA 4.0 International](LICENSE.md). Material adapted from Mark Bakke is attributed in [PROVENANCE](Reference/PROVENANCE.md). Third-party plugins, themes, trademarks, and other separately identified material remain under their respective licenses; see [Third-Party Notices](Reference/THIRD-PARTY-NOTICES.md).
 
 ## Variations and publishing
 

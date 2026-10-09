@@ -30,7 +30,7 @@ These are the principles behind the workflow:
 5. **Work in manageable pieces.** Break vague or oversized tasks into a next action that fits the available time and energy.
 6. **Make unfinished work explicit.** At the end of a day or review period, every open item should have a deliberate disposition. It should not simply vanish from view.
 7. **Keep the system visible and adaptable.** The vault should help a person see what is happening and what needs attention. Simplify it when the structure creates more work than value.
-8. **Reduce friction over time.** When work is repeatedly difficult to start, resume, or complete, improve the path rather than relying only on more effort. Clarify the next action, make the task smaller, create a reusable template, remove an unnecessary step, delegate it, or automate it when the pattern recurs.
+8. **Reduce friction over time.** When work is repeatedly difficult to start, resume, or complete, improve the path rather than relying only on more effort. Clarify the next action, make the task smaller, create a reusable template, remove an unnecessary step, delegate it, or consider automation when the recurring effort justifies its upkeep.
 
 ## Delegate, Record, or Do
 

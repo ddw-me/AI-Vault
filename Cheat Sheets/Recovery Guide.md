@@ -16,7 +16,13 @@ An extracted archive does not contain Git history. Preserve the original extract
 
 ### Optional Git setup
 
-Git is optional for an archive recipient. If you want local checkpoints and history, initialize a repository after reviewing the extracted vault:
+Git is optional for an archive recipient. If you want local checkpoints and history, use the path that matches how you received the vault.
+
+If Git is not installed, use the official [Git installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Before making commits, set your author identity with Git's [first-time setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup). GitHub's [adding a remote repository guide](https://docs.github.com/en/get-started/git-basics/adding-a-remote-repository) provides provider-specific examples.
+
+#### Downloaded archive
+
+An extracted archive has no Git history or remote. After reviewing the vault, initialize a repository:
 
 ```text
 cd /path/to/vault
@@ -28,6 +34,29 @@ git commit -m "Initial vault checkpoint"
 ```
 
 Review staged files before the first commit and do not add credentials, private keys, or other sensitive material. Configure a remote only if you understand where the vault will be stored and who can access it.
+
+#### Cloned starter repository
+
+A clone already has a remote, usually named `origin`, that points to the starter repository. Inspect it before pushing anything:
+
+```text
+cd /path/to/vault
+git branch --show-current
+git remote -v
+```
+
+Do not push personal notes while `origin` still points to the public starter. Create a private repository for your own vault, then either replace `origin` or preserve the starter remote under another name:
+
+Create the private repository as an empty repository, without an initial README, license, or `.gitignore`. That lets the first push use the history already present in the cloned vault.
+
+```text
+git remote rename origin starter
+git remote add origin <private-repository-url>
+git remote -v
+git push -u origin <your-current-branch>
+```
+
+Replace `<your-current-branch>` with the branch reported by `git branch --show-current`. Keeping the starter remote as `starter` is useful if you later want to inspect generic updates, but review any merge carefully before bringing them into a vault containing personal notes.
 
 ## Using a remote repository
 

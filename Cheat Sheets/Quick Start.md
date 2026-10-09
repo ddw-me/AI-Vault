@@ -1,16 +1,15 @@
 # Quick Start
 
-This is the only onboarding guide for the vault. Start small: daily notes are enough for the first week. Add projects, reviews, and AI assistance as they become useful.
+This is the main workflow onboarding guide for the vault. Start small: daily notes are enough for the first week. Add projects, reviews, and AI assistance as they become useful.
 
 ## 1. Install and open the vault
 
 1. Install [Obsidian](https://obsidian.md/) on the computer or device you will use most often.
 2. If you received an archive, extract it first. In Obsidian, choose **Open folder as vault** and select the folder containing `README.md`. Do not open one of its subdirectories as the vault.
-3. Read [AGENTS.md](../AGENTS.md) for the portable rules.
 
 ## 2. Verify Daily Notes
 
-The vault ships with Daily Notes and Templates settings. Open the relevant Obsidian settings and verify that daily notes use `Daily Notes/`, the standard template is `Templates/Daily Notes Template.md`, and templates are stored in `Templates/`. Change these settings only if you want a different layout.
+The vault ships with Daily Notes and Templates settings. Verify these settings in Obsidian, and change them only if you want a different layout.
 
 In Obsidian, open Settings and review Daily notes:
 
@@ -91,6 +90,8 @@ The important habit is to commit regularly enough that you have a recent point t
 A local commit provides history and recovery. Push or copy the repository elsewhere if you also want protection from computer loss or disk failure. A private GitHub repository is one option for personal notes, provided you are comfortable storing them there and configure access carefully. See the [Recovery Guide](./Recovery%20Guide.md) for practical commands.
 
 ### C. AI assistance
+
+> Before opening this vault in an AI-enabled editor or connecting an AI assistant, read [AGENTS.md](../AGENTS.md). It defines what the AI may read, suggest, change, and do automatically.
 
 AI is optional, but recommended. It can help analyze notes, suggest smaller next actions, or prepare a review, but it should not silently invent tasks or decide what you value. Useful starting prompts include:
 

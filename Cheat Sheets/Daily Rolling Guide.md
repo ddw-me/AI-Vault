@@ -18,7 +18,7 @@ Open today's daily note or create it from the configured template. Then open the
 
 Review the most recent earlier note and copy only the next actions you choose to continue into today's note. Preserve the earlier note unchanged. Choose today's Daily Frog and priorities after reviewing the available context. Skipped days do not need daily notes.
 
-Review the AI's proposed carry-forwards and plan. You remain the person who decides what matters today. Accept, revise, or reject the proposed Daily Frog and priorities.
+If you used an AI assistant, review its proposed carry-forwards and plan. You remain the person who decides what matters today. Accept, revise, or reject the proposed Daily Frog and priorities.
 
 Before starting work, make sure:
 
@@ -53,11 +53,13 @@ Before stopping, review every open item:
 - carry it forward with a clear next action;
 - move it to the appropriate project;
 - mark it as waiting or delegated;
-- schedule it for a better time;
+- put it into a calendar or reminder, or retain it in a regularly reviewed project or waiting list with a follow-up or review date;
 - decide that it is no longer needed; or
 - flag it for a decision.
 
 Leave a short starting point for tomorrow. A useful carry-forward explains what to do next and why it still matters; it is not just a copied checkbox.
+
+A date written only in an old daily note does not create a reminder. Scheduled work needs a place where it will resurface, such as a calendar, reminder system, active project, or waiting list that is reviewed deliberately.
 
 ## Quick Wins and Waiting
 

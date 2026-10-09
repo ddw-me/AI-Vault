@@ -1,13 +1,13 @@
 # Obsidian Setup
 
-This note explains how to install Obsidian, open this vault, verify its shipped settings, and decide whether to enable optional features. If you are new to Obsidian, start here before following the [Quick Start](../Cheat%20Sheets/Quick%20Start.md).
+This note provides detailed installation, settings, theme, and optional-feature guidance. The [Quick Start](../Cheat%20Sheets/Quick%20Start.md) is the main workflow onboarding guide.
 
 ## Install Obsidian and open the vault
 
 1. Download Obsidian from the official [Obsidian download page](https://obsidian.md/download) and install it for your computer or device.
 2. Obtain this vault by cloning the repository or downloading an archive. If you received an archive, extract it before opening it.
 3. In Obsidian, choose **Open folder as vault** and select the folder containing `README.md`. Do not open one of its subdirectories as the vault.
-4. If you are viewing the repository on GitHub, the Markdown files and their relative links can also be read directly there. Opening the folder in Obsidian is required for editing and using the vault as a working system.
+4. If you are viewing the repository on GitHub, the Markdown files and their relative links can also be read directly there. Other editors can edit the Markdown records, while Obsidian is needed for the configured Obsidian commands and features described in this note.
 
 Obsidian stores the vault's notes as ordinary Markdown files alongside its local configuration. This makes the notes portable and lets you use Git or another backup method, but it also means that synchronized copies should be set up and tested carefully.
 
