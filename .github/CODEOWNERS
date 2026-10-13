@@ -1,0 +1,5 @@
+# Default owner for all files in this repository.
+* @ddw-me
+
+# Keep the ownership rules themselves under review.
+/.github/CODEOWNERS @ddw-me

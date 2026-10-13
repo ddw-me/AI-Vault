@@ -2,6 +2,11 @@
 
 This file records notable changes to the published starter-vault snapshots. It is a release history, not an automatic upgrade guide. Once a vault has been customized, review later changes and adopt them selectively.
 
+## v1.0.0
+
+- Promoted the starter vault version to 1.0.0.
+- Added `.github/CODEOWNERS`, assigning `@ddw-me` as the default owner for repository files and for the ownership rules themselves.
+
 ## v0.9.2
 
 - Consolidated the bundled third-party license text into `Reference/THIRD-PARTY-NOTICES.md`, including the required MIT, GPL-3.0, MPL-2.0, and Tag Wrangler notices.
